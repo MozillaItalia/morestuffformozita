@@ -55,7 +55,7 @@ Rust è una scelta ideale per riscrivere parti sensibili delle proprie applicazi
 Grazie all’interfaccia FFI è in grado di integrarsi bene con altri linguaggi di programmazione e dispone di un leggero ambiente di runtime in grado di competere con quelli del *C* e del *C++*, anche quando le risorse a disposizione sono limitate.
 
 Nonostante la natura del linguaggio in costante evoluzione, esistono già progetti di una certa rilevanza, applicazioni utilizzate in ambienti di produzione che hanno già fatto buon uso di Rust nel corso del tempo: la startup di Yehuda Katz, Skylight, sfrutta le elevate prestazioni del [codice Rust integrato in un pacchetto gem Ruby][16] per la manipolazione dei dati.
-La versione 1.0  rappresenta un’importante pietra miliare nello sviluppo del linguaggio in quanto non sono previsti cambiamenti rilevanti da qui in avanti.
+La versione 1.0 rappresenta un’importante pietra miliare nello sviluppo del linguaggio in quanto non sono previsti cambiamenti rilevanti da qui in avanti.
  Proprio per questo motivo è possibile consigliare l’utilizzo di Rust anche per progetti importanti.
 
 È possibile guardare il video di Yehuda Katz e Tom Dale in cui spiegano le [basi della programmazione in Rust][17] e come loro utilizzano Rust unitamente a Ruby per le loro applicazioni.
@@ -65,7 +65,7 @@ Primi passi con Rust
 
 Esistono molte guide che introducono i concetti base di Rust e altre che trattano argomenti più specifici.
 Ad esempio, nel blog dedicato a Rust, il [Rust blog][18], è possibile trovare molti articoli interessanti su vari aspetti del linguaggio.
-Esistono anche eccellenti presentazioni introduttivi come quella tenuto all’università di Stanford da Aaron Turon.
+Esistono anche eccellenti presentazioni introduttive come quella tenuta all’università di Stanford da Aaron Turon.
 In questo *talk*, Aaron spiega in modo brillante i concetti fondamentali e i principi alla base di Rust e può rappresentare il perfetto punto di partenza per un viaggio alla scoperta del linguaggio:
 
 <iframe width="500" height="281" src="https://www.youtube.com/embed/O5vzLKg7y-k?feature=oembed" frameborder="0" allowfullscreen></iframe>
@@ -141,9 +141,11 @@ Piuttosto, iniziamo adesso a concentrarci su del vero codice.
 
 Senza ulteriori divagazioni, ecco il primo frammento di codice in Rust:
 
-    fn main() {
-        println!("Hello, Rust!");
-    }
+```Rust
+fn main() {
+    println!("Hello, Rust!");
+}
+```
 
 [Apri questo codice Rust nel playpen online»][36]
 
@@ -160,51 +162,57 @@ Per evidenziare meglio la semantica e gli aspetti peculiari di Rust, che sono lo
 
 **Versione in C dell’algoritmo Fizzbuzz**
 
-    #include
+```C
+#include <stdio.h>
 
-    int main(void)
+int main(void)
+{
+    int num;
+    for(num=1; num<101; ++num)
     {
-        int num;
-        for(num=1; num<101; ++num)
-        {
-            if( num%3 == 0 && num%5 == 0 ) {
-                printf("fizzbuzz\n");
-            } else if( num%3 == 0) {
-                printf("fizz\n");
-            } else if( num%5 == 0) {
-                printf("buzz\n");
-            } else {
-                printf("%d\n",num);
-            }
+        if( num%3 == 0 && num%5 == 0 ) {
+            printf("fizzbuzz\n");
+        } else if( num%3 == 0) {
+            printf("fizz\n");
+        } else if( num%5 == 0) {
+            printf("buzz\n");
+        } else {
+            printf("%d\n",num);
         }
-
-        return 0;
     }
+
+    return 0;
+}
+```
 
 **Versione in Python di Fizzbuzz**
 
-    for num in xrange(1,101):
-        if num%3 == 0 and num%5 == 0:
-            print "fizzbuzz"
-        elif num%3 == 0:
-            print "fizz"
-        elif num%5 == 0:
-            print "buzz"
-        else:
-            print num
-
+```Python
+for num in xrange(1,101):
+    if num%3 == 0 and num%5 == 0:
+        print "fizzbuzz"
+    elif num%3 == 0:
+        print "fizz"
+    elif num%5 == 0:
+        print "buzz"
+    else:
+        print num
+  
+        ``
 **Versione in Rust di Fizzbuzz**
 
-    fn main() {
-        for num in 1..101 { // Range notation!
-            match (num%3, num%5) { // Pattern Matching FTW!
-                (0, 0) => println!("fizzbuzz"),
-                (0, _) => println!("fizz"),
-                (_, 0) => println!("buzz"),
-                     _ => println!("{}", num)
-            }
+```
+fn main() {
+    for num in 1..101 { // Range notation!
+        match (num%3, num%5) { // Pattern Matching FTW!
+            (0, 0) => println!("fizzbuzz"),
+            (0, _) => println!("fizz"),
+            (_, 0) => println!("buzz"),
+                 _ => println!("{}", num)
         }
     }
+}
+```Rust
 
 [Apri questo codice Rust nel playpen online»][37]
 
@@ -218,75 +226,81 @@ I tradizionali cicli `for` sono considerati fonte di errori e sono perciò stati
 
 Ora analizziamo più in dettaglio cosa accade nella fase di *pattern matching* del nostro esempio:
 
-    …
+```
+…
 
-    // per il pattern matching creiamo una tupla che contenga
-    // i resti della divisione intera per 3 e 5
-    match (num%3, num%5) {
-        // quando num è divisibile sia per 3 che 5
-        // (entrambi i resti sono 0)
-        // -> stampiamo  "fizzbuzz"
-        (0, 0) => println!("fizzbuzz"),
+// per il pattern matching creiamo una tupla che contenga
+// i resti della divisione intera per 3 e 5
+match (num%3, num%5) {
+    // quando num è divisibile sia per 3 che 5
+    // (entrambi i resti sono 0)
+    // -> stampiamo  "fizzbuzz"
+    (0, 0) => println!("fizzbuzz"),
 
-        // quando num è divisibile per 3 (il resto è 0)
-        // è divisibile per 5? A noi non interessa
-        // -> stampiamo "fizz"
-        (0, _) => println!("fizz"),
+    // quando num è divisibile per 3 (il resto è 0)
+    // è divisibile per 5? A noi non interessa
+    // -> stampiamo "fizz"
+    (0, _) => println!("fizz"),
 
-        // quando num è divisibile per 5 (il resto è 0)
-        // è divisibile per 3? A noi non interessa
-        // -> stampiamo "buzz"
-        (_, 0) => println!("buzz"),
+    // quando num è divisibile per 5 (il resto è 0)
+    // è divisibile per 3? A noi non interessa
+    // -> stampiamo "buzz"
+    (_, 0) => println!("buzz"),
 
-        // In qualsiasi altro caso stampiamo il numero
-        // Nota, il matching deve essere esaustivo, vale a dire:
-        // bisogna considerare tutti i possibili valori, ma questo è forzato
-        // dal compiler Rust
-             _ => pintln!("{}", num)
-    }
-    …
+    // In qualsiasi altro caso stampiamo il numero
+    // Nota, il matching deve essere esaustivo, vale a dire:
+    // bisogna considerare tutti i possibili valori, ma questo è forzato
+    // dal compiler Rust
+         _ => pintln!("{}", num)
+}
+…
+```
 
-Questo non è il luogo per trattare approfonditamente il funzionamento del *pattern matching*, della destrutturizzazione e per spiegare cosa sono le tuple.
+Questo non è il luogo per trattare approfonditamente il funzionamento del *pattern matching*, della destrutturazione e per spiegare cosa sono le tuple.
 È possibile trovare ottimi articoli che trattano questi argomenti in modo approfondito nel libro [*Rust Book*][41], nel [Rust Blog][42] o su [*Rust By Example*][38], ma pensiamo che accennarli sia un modo per dimostrare le caratteristiche che rendono Rust così potente ed efficace.
 
 ### Fizzbuzz utilizzando la programmazione funzionale
 
 Per estendere l’ultimo esempio prodotto e per dimostrare la reale versatilità di Rust, nel nostro secondo esempio faremo fare un salto di qualità al codice del nostro Fizzbuzz.
-Rust definisce sè stesso “pluriparadigma”.
+Rust definisce se stesso “pluriparadigma”.
 Possiamo mettere tutto ciò alla prova riscrivendo il programma Fizzbuzz utilizzando la programmazione funzionale.
 Per avere una migliore prospettiva, mostreremo anche il codice utilizzando le specifiche della versione 6 di JavaScript (EcmaScript 6).
 
 **Fizzbuzz, versione JavaScript utilizzando le tecniche della programmazione funzionale della versione 6**
 
-    Array.from(Array(100).keys()).slice(1)
-        .map((num) => {
-            if (num%3 === 0 && num%5 === 0) {
-                return "fizzbuzz";
-            } else if (num%3 === 0) {
-                return "fizz";
-            } else if (num%5 === 0) {
-                return "buzz";
-            } else {
-                return num;
-            }
-        })
-        .map(output => console.log(output));
+```JavaScript
+Array.from(Array(100).keys()).slice(1)
+    .map((num) => {
+        if (num%3 === 0 && num%5 === 0) {
+            return "fizzbuzz";
+        } else if (num%3 === 0) {
+            return "fizz";
+        } else if (num%5 === 0) {
+            return "buzz";
+        } else {
+            return num;
+        }
+    })
+    .map(output => console.log(output));
+```
 
 **Fizzbuzz, versione in Rust utilizzando le tecniche della programmazione funzionale**
 
-    fn main() {
-        (1..101)
-            .map(|num| {
-                match (num%3, num%5) { // Pattern Matching FTW!
-                    (0, 0) => "fizzbuzz".to_string(),
-                    (0, _) => "fizz".to_string(),
-                    (_, 0) => "buzz".to_string(),
-                         _ => format!("{}", num)
-                }
-            })
-            .map(|output| { println!("{}", output); output })
-            .collect::<Vec<_>>();
-    }
+```Rust
+fn main() {
+    (1..101)
+        .map(|num| {
+            match (num%3, num%5) { // Pattern Matching FTW!
+                (0, 0) => "fizzbuzz".to_string(),
+                (0, _) => "fizz".to_string(),
+                (_, 0) => "buzz".to_string(),
+                     _ => format!("{}", num)
+            }
+        })
+        .map(|output| { println!("{}", output); output })
+        .collect::<Vec<_>>();
+}
+```
 
 [Apri questo codice Rust nel playpen online»][44]
 
