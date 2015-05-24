@@ -1,4 +1,5 @@
-![Il logo del linguaggio di programmazione Rust][0]
+!
+[Il logo del linguaggio di programmazione Rust][0]
 
 [Rust][1] è un nuovo linguaggio di programmazione focalizzato sulle prestazioni, la parallelizzazione dei processi e la gestione sicura della memoria.
 Sviluppando un nuovo linguaggio da zero e includendo alcuni dei modelli utilizzati dai moderni linguaggi di programmazione, gli sviluppatori di Rust hanno evitato la necessità di includere un sacco di “zavorra” (codice per la retrocompatibilità) con cui i linguaggi di programmazione meno recenti devono fare i conti.
@@ -141,7 +142,7 @@ Piuttosto, iniziamo adesso a concentrarci su del vero codice.
 
 Senza ulteriori divagazioni, ecco il primo frammento di codice in Rust:
 
-```Rust
+```rust
 fn main() {
     println!("Hello, Rust!");
 }
@@ -162,7 +163,7 @@ Per evidenziare meglio la semantica e gli aspetti peculiari di Rust, che sono lo
 
 **Versione in C dell’algoritmo Fizzbuzz**
 
-```C
+```c
 #include <stdio.h>
 
 int main(void)
@@ -187,7 +188,7 @@ int main(void)
 
 **Versione in Python di Fizzbuzz**
 
-```Python
+```python
 for num in xrange(1,101):
     if num%3 == 0 and num%5 == 0:
         print "fizzbuzz"
@@ -197,11 +198,11 @@ for num in xrange(1,101):
         print "buzz"
     else:
         print num
-  
-        ``
+```
+
 **Versione in Rust di Fizzbuzz**
 
-```
+```rust
 fn main() {
     for num in 1..101 { // Range notation!
         match (num%3, num%5) { // Pattern Matching FTW!
@@ -212,7 +213,7 @@ fn main() {
         }
     }
 }
-```Rust
+```
 
 [Apri questo codice Rust nel playpen online»][37]
 
@@ -226,9 +227,8 @@ I tradizionali cicli `for` sono considerati fonte di errori e sono perciò stati
 
 Ora analizziamo più in dettaglio cosa accade nella fase di *pattern matching* del nostro esempio:
 
-```
+```rust
 …
-
 // per il pattern matching creiamo una tupla che contenga
 // i resti della divisione intera per 3 e 5
 match (num%3, num%5) {
@@ -268,7 +268,7 @@ Per avere una migliore prospettiva, mostreremo anche il codice utilizzando le sp
 
 **Fizzbuzz, versione JavaScript utilizzando le tecniche della programmazione funzionale della versione 6**
 
-```JavaScript
+```javascript
 Array.from(Array(100).keys()).slice(1)
     .map((num) => {
         if (num%3 === 0 && num%5 === 0) {
@@ -286,7 +286,7 @@ Array.from(Array(100).keys()).slice(1)
 
 **Fizzbuzz, versione in Rust utilizzando le tecniche della programmazione funzionale**
 
-```Rust
+```rust
 fn main() {
     (1..101)
         .map(|num| {
