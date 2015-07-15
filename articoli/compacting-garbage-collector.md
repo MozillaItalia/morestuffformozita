@@ -1,38 +1,38 @@
 ## Sommario
 
-La **compattazione** è una nuova caratteristica del [**Garbage Collector**][0] di Firefox, disponibile a partire dalla versione 38, che consente di ridurre la frammentazione esterna nello **heap** JavaScript.
-L’obiettivo è quello di utilizzare meno memoria e di gestire in maniera più efficace le situazioni in cui viene esaurita la memoria disponibile (*out of memory*).
-Al momento è stata implementata solo la compattazione degli oggetti JavaScript , che sono solo una parte delle celle che vengono allocate nello *heap*.
+La **compattazione** è una nuova funzione del [**Garbage Collector**][0] di Firefox, disponibile a partire dalla versione 38, che consente di ridurre la frammentazione esterna nello **heap** JavaScript.
+L’obiettivo di questa funzione è ottimizzare il consumo di memoria in generale oltre che gestire con maggiore efficienza i casi di memoria insufficiente.
+Al momento è stata implementata unicamente la compattazione degli oggetti JavaScript, uno solo tra i vari tipi di celle dello *heap* elaborate dal *Garbage Collector*.
 
 ## Il problema
 
-Lo *heap* JavaScript è composto da 4000 blocchi di memoria denominati **arene**, ciascuna delle quali è suddivisa in celle di eguale dimensione.
+Lo *heap* JavaScript è composto da 4000 blocchi di memoria denominati **arene**, ciascuna delle quali è suddivisa in celle di dimensioni prestabilite.
 *Arene* diverse sono utilizzate per memorizzare differenti tipi di celle e ciascuna *arena* contiene celle dello stesso tipo e della stessa dimensione.
 
-Lo *heap* contiene diversi tipi di celle, incluse le celle per gli oggetti Javascript, le stringhe e i simboli, ma anche celle utilizzate per dati interni come *script* (utilizzate per memorizzare il codice JavaScript), le *shape* (utilizzate per memorizzare la rappresentazione degli oggetti grafici e delle loro proprietà) e codice JIT (codice JIT compilato).
+Lo *heap* contiene diversi tipi di celle, incluse quelle destinate agli oggetti JavaScript, le stringhe e i simboli, ma anche celle utilizzate per dati interni come *script* (per memorizzare il codice JavaScript), *shape* (per memorizzare la rappresentazione degli oggetti grafici e delle loro proprietà) e *jitcode* (codice JIT compilato).
 Di tutte queste, solitamente le celle utilizzate per gli oggetti JavaScript sono quelle che utilizzano la maggiore quantità di memoria.
 
 Un’*arena* non può essere liberata se al suo interno c’è una cella che contiene dati in uso.
-Celle che vengono allocate nello stesso istante possono avere dei cicli di vita differenti e può quindi accadere che ci si trovi in una situazione in cui nello *heap* ci siano molte *arene* con pochissime celle attive.
-Nuove celle dello stesso tipo possono essere allocate in questo spazio libero, ma non è possibile sfruttare tale spazio inutilizzato per allocare celle di tipo diverso o per restituirla al sistema in situazioni con poca memoria a disposizione.
+Celle allocate nello stesso periodo possono avere dei cicli di vita differenti, talvolta accade quindi che nello *heap* si trovino più *arene* ciascuna contenente solo poche celle attive.
+Lo spazio libero di ciascuna arena può ancora essere impiegato per allocare nuove celle dello stesso tipo, ma sarà inutilizzabile per celle di tipo diverso o per essere reimpiegato dal sistema in caso di memoria insufficiente.
 
-Di seguito è mostrato un diagramma dello *heap* in cui, per semplicità, vengono mostrate delle arene che contengono due diversi tipologie di celle.
+Di seguito è mostrato un diagramma semplificato dello *heap* con arene che contengono due diverse tipologie di celle.
 
 ![heap layout smallest][1]
 
-Si noti che se fosse possibile utilizzare lo spazio libero nell’arena 3 per allocare le celle dell’arena 5 sarebbe possibile liberare del tutto un’arena.
+Si noti che se fosse possibile utilizzare lo spazio libero nell’arena 3 per allocare le celle dell’arena 5, si otterrebbe un’intera arena libera.
 
-## Misurare lo spazio sprecato
+## Misurare lo spazio inutilizzato
 
 È possibile conoscere lo spazio utilizzato da queste celle non più attive visitando la pagina `about:memory` e premendo il tasto <button>Measure</button>.
-L’ammontare complessivo di memoria per ciascun tipo di celle è visualizzato nella sezione `js-main-runtime-gc-heap-committed/unused/gc-things`. Se non si ha familiarità nell’interpretazione dei dati prodotti dalla pagina `about:memory` è possibile consultare [questo articolo su MDN][2].
+L’ammontare complessivo di memoria per ciascun tipo di cella è visualizzato nella sezione `js-main-runtime-gc-heap-committed/unused/gc-things`. Per maggiori informazioni su come interpretare i rapporti della pagina `about:memory` consultare [questo articolo su MDN][2].
 
 Di seguito uno screenshot dell’intera sezione `js-main-runtime-gc-heap-committed` con la compattazione del **Garbage Collector** disattivata che mostra la differenza tra spazio utilizzato e non:
 
 ![unused *heap* screenshot][3]
 
-Ho effettuato delle misure approssimative dell’utilizzo di memoria della mia normale navigazione sia con la compattazione attivata che con la compattazione disattivata per osservare le differenze. La spiegazione di come ottenere questi dati è descritta nell’ultima sezione di questo articolo.
-I dati sono stati rilevati con una cinquantina di schede aperte, tra cui Google Mail, Google Calendar molte pagine di Bugzilla e altri siti e questo è il risultato ottenuto:
+Ho effettuato misurazioni approssimative dell’utilizzo di memoria durante la mia normale navigazione con la compattazione sia attivata che disattivata per osservare le differenze. La procedura per ottenere questi dati è descritta nell’[ultima sezione](#come-calcolare-lo-spazio-liberato-con-la-compattazione) dell’articolo.
+I dati sono stati rilevati con una cinquantina di schede aperte, tra cui Google Mail, Google Calendar, varie pagine di Bugzilla e altri siti. Questo è il risultato ottenuto:
 
 <table>
 <tr>
@@ -52,18 +52,18 @@ I dati sono stati rilevati con una cinquantina di schede aperte, tra cui Google 
 </tr>
 </table>
 
-È possibile osservare una riduzione di 29,4MiB ([mebibytes][4]) del valore delle allocazioni esplicite.
-In effetti si tratta solo del 4% rispetto al totale delle allocazioni complessive, ma è ben l’8% se consideriamo solo lo spazio occupato dall’allocazione di oggetti JavaScript (e la compattazione, al momento, è effettuata solo sulle celle con oggetti JavaScript).
+È possibile osservare una riduzione delle allocazioni esplicite di 29,4MiB ([mebibytes][4]).
+Si tratta solo del 2% rispetto al totale delle allocazioni complessive, ma considerando solo lo spazio occupato dall’allocazione di oggetti JavaScript (al momento gli unici soggetti a compattazione) sale a oltre 8%.
 
 ## Funzionamento della compattazione
 
 Per recuperare lo spazio inutilizzato il **Garbage Collector** dovrebbe essere in grado di spostare le celle fra differenti *arene*,
-in questo modo sarebbe possibile allocare le celle attive in un numero limitato di *arene* e liberare lo spazio inutilizzato.
-Beh, certo, però questo è più facile a dirsi che a farsi, perché per ogni cella spostata bisognerebbe riaggiornare tutti i puntatori per farli puntare alla nuova posizione.
-Dimenticarsi di aggiornare anche un solo puntatore è una sicura fonte di disastri e il risultato sarebbe quasi sicuramente un crash di Firefox.
+in modo da concentrare le celle attive in un numero limitato di *arene* e liberare le altre.
+Certo è più facile a dirsi che a farsi, perché per ogni cella spostata bisognerebbe riaggiornare anche i relativi puntatori.
+Anche un solo puntatore non aggiornato potrebbe bastare a causare un *crash* di Firefox.
 
-Questa operazione inoltre è molto dispendiosa in termini di risorse perché bisognerebbe analizzare un gran numero di celle alla ricerca dei puntatori da aggiornare.
-Per questo motivo l’idea è quella di procedere alla compattazione dello *heap* solo quando si dispone di poca memoria o l’utente non stia utilizzando Firefox.
+Questa operazione inoltre è molto dispendiosa in termini di risorse perché richiede l’analisi di un numero non irrilevante di celle alla ricerca dei puntatori da aggiornare.
+Per questo motivo l’idea è quella di procedere alla compattazione dello *heap* solo nei momenti in cui si disponga di poca memoria o l’utente non stia utilizzando Firefox.
 
 L’algoritmo di compattazione è suddiviso in tre fasi:
 
@@ -73,19 +73,19 @@ L’algoritmo di compattazione è suddiviso in tre fasi:
 
 ### Selezione delle celle da spostare
 
-Ciò che ci proponiamo di fare è di spostare il minor numero di dati possibile e di farlo senza riallocare ulteriore memoria, in quanto si suppone che non ci sia molta memoria a disposizione.
-Per fare questo inseriamo in una lista tutte le *arene* con spazio libero al loro interno ordinandole in modo decrescente a seconda del numero di celle libere al loro interno.
-Suddividiamo la lista in due parti a partire dal punto in cui le arene della prima parte contengono abbastanza celle libere per poter ospitare le celle attive della seconda parte della lista.
+Ciò che ci proponiamo di fare è spostare il minor numero di dati possibile e di farlo senza riallocare ulteriore memoria, partendo dal presupposto che la memoria a disposizione sia già in esaurimento.
+Per fare questo inseriamo in una lista tutte le *arene* che contengono spazio libero, ordinandole in modo decrescente a seconda del numero di celle libere al loro interno.
+Suddividiamo la lista in due parti a partire dal punto in cui le arene della prima parte contengono abbastanza celle libere per ospitare le celle attive delle arene nella seconda parte.
 Sposteremo tutte le celle delle arene della seconda parte.
 
 ### Spostamento delle celle
 
-Da una delle arene del primo gruppo le cui celle non verranno spostate allochiamo una nuova cella.
+Allochiamo dunque una nuova cella da una delle arene che non subiranno spostamenti.
 Il passaggio precedente ci assicura che ci sia abbastanza spazio libero per effettuare questa operazione.
 A questo punto copiamo i dati dalla posizione iniziale.
 
-In alcuni casi saremo in grado di riconoscere se ci sono celle con puntatori che puntano a sé stessi e in questa situazione procederemo al loro aggiornamento.
-Il browser potrebbe avere dei riferimenti a oggetti esterni e in questo caso utilizzeremo un **hook** per aggiornarli.
+In alcuni casi troveremo una cella con puntatori che puntano alla cella medesima: essi verranno aggiornati in questa fase.
+Il browser potrebbe contenere riferimenti a oggetti esterni, in questo caso utilizzeremo un **hook** per aggiornarli.
 
 Dopo aver spostato una cella, aggiorneremo la locazione di memoria originale con un puntatore di reindirizzamento che faccia riferimento alla nuova posizione in modo da poterla facilmente ritrovare in seguito.
 Questo permetterà inoltre al **Garbage Collector** di identificare le celle che sono state spostate e vedremo come ciò verrà utilizzato nel successivo passaggio.
@@ -99,14 +99,14 @@ Una tale scansione globale dello *heap* sarebbe davvero dispendiosa in termini d
 Abbiamo però alcuni metodi per ridurre le risorse impiegate.
 Innanzitutto si noti che lo *heap* è suddiviso in più zone: una zona per ogni scheda aperta e altre zone utilizzate dal sistema.
 Dato che, di norma, le celle non contengono mai puntatori con riferimenti a zone diverse da quella in cui si trovano, la compattazione potrà essere effettuata per zona e non su tutto lo *heap*.  Il caso particolare di celle con puntatori a zone diverse da quella di appartenenza verrà effettuato a parte.
-La compattazione per zone ci consentirà di suddividere il processo in più parti.
+La compattazione per zone ci consentirà di suddividere il processo in diverse sezioni incrementali.
 
-In secondo luogo, per costruzione, esistono delle tipologie di celle che non possono contenere puntatori a altre tipologie di celle (a essere precisi ci sono alcuni tipologie di celle che non possono proprio contenere dei puntatori), in questo modo è quindi possibile escludere alcune celle dalla ricerca.
+In secondo luogo, per costruzione, esistono delle tipologie di celle che non possono contenere puntatori a altre tipologie di celle (a essere precisi ci sono alcune tipologie di celle che non possono proprio contenere dei puntatori), è quindi possibile escludere a priori alcune celle dalla ricerca.
 
 Infine, possiamo parallelizzare questa operazione e sfruttare tutte le risorse della CPU disponibili.
 
 È importante notare che ciò è stato reso possibile solo grazie al lavoro fatto a suo tempo implementando l’**exact stack rooting**, come descritto in [questo articolo del blog Mozilla][5].
-Infatti è possibile spostare degli oggetti solamente conoscendo quali locazioni nello *stack* sono **root**, altrimenti potremo sovrascrivere dei dati non correlati nello stack che potrebbero essere interpretati erroneamente come dei puntatori a celle.
+Infatti è possibile spostare gli oggetti solamente conoscendo quali locazioni nello *stack* sono **root**, altrimenti si corre il rischio di sovrascrivere dei dati non correlati nello *stack* che potrebbero essere interpretati erroneamente come dei puntatori a celle.
 
 ## Programmare l’esecuzione di ogni compattazione
 
@@ -115,15 +115,15 @@ Allo stato attuale dell’implementazione essa viene effettuata nelle seguenti s
 
 -   è stata utilizzata tutta la memoria e si cerca di fare un ultimo tentativo per liberare dello spazio utile;
 -   il sistema operativo genera un messaggio riguardante la gestione della memoria non corretta da parte di Firefox;
--   l’utente non sta utilizzando il sistema per un certo periodo di tempo (per impostazione predefinita questo periodo è attualmente di 20 secondi).
+-   l’utente non utilizza il sistema per un certo periodo di tempo (per impostazione predefinita questo periodo è attualmente di 20 secondi).
 
-Nei primi due casi viene fatto per evitare di trovarsi nella situazione di consumare tutta la memoria a disposizione, mentre nel terzo caso si cerca di ottimizzare la memoria a disposizione senza impattare sulla navigazione.
+Nei primi due casi la compattazione viene avviata per scongiurare situazioni di memoria insufficiente, mentre nel terzo caso si cerca di ottimizzare la memoria a disposizione senza impattare la navigazione.
 
 ## Conclusione
 
-Spero che questo articolo sia riuscito a spiegare il problema della compattazione del **Garbage Collector** e di come stiamo cercando di affrontarlo.
+Spero che questo articolo sia riuscito a spiegare il problema della compattazione del **Garbage Collector** e come stiamo cercando di affrontarlo.
 
-Un inaspettato effetto positivo dell’implementazione della compattazione del **Garbage Collector** è che ci siamo accorti di alcune situazioni in cui il *tracing* dei puntatori alle celle era sbagliato.
+Un inaspettato effetto positivo dell’implementazione della compattazione del **Garbage Collector** è che ha rivelato alcuni errori nel *tracing* dei puntatori alle celle.
 E questo tipo di errori possono generare dei crash difficili da identificare e riprodurre e generare possibili falle nella sicurezza del browser, quindi possiamo considerarlo un ulteriore miglioramento anche da questo punto di vista.
 
 Idee per il futuro
@@ -133,9 +133,9 @@ Ci sono ancora molti altri aspetti su cui possiamo concentrarci per migliorarlo 
 
 Attualmente la compattazione viene effettuata solo sugli oggetti JavaScript, ma esistono molti altri oggetti nello *heap* e estenderla anche a questi potrebbe consentirci di ottimizzare ulteriormente la memoria utilizzata.
 
-Una domanda sorge spontanea: è possibile determinare a priori se le celle contengono dei puntatori alle celle che andremo a spostare?
+Se trovassimo il modo per farlo, le risorse impiegate per la compattazione verrebbero ulteriormente ridotte.
 Se ciò fosse possibile le risorse impiegate per la compattazione verrebbero ulteriormente ridotte.
-Una possibilità sarebbe quella di scansionare lo *heap* in background, ma si renderebbe necessario individuare le modifiche effettuate alle celle dal **mutator**.
+Una possibile soluzione è scansionare lo *heap* in background, ma per farlo si renderebbe necessario individuare le modifiche effettuate alle celle dal **mutator**.
 
 L’attuale algoritmo del  **Garbage Collector** raggruppa assieme celle allocate in diversi momenti.
 Solitamente, le celle che sono allocate nello stesso momento hanno una durata simile, motivo per cui questa scelta non è il massimo.
@@ -148,14 +148,15 @@ Per stimare a grandi linee lo spazio liberato grazie alla compattazione è possi
 
 1. Disattivare la compattazione aprendo la pagina `about:config` e impostando la preferenza `javascript.options.mem.gc_compacting` a `false`.
 2.  Al momento attuale è preferibile disattivare la modalità multiprocesso di Firefox dal pannello Opzioni.
-3.  Riavviare Firefox e aprire qualche scheda. In alternativa si può scegliere di aprire tutte le schede della sessione precedente. Attendere che le pagine vengano caricate.
+3.  Riavviare Firefox e aprire alcune schede. Per guadagnare tempo è presente un’opzione che permette di ricaricare tutte le schede della sessione precedente. Attendere che le pagine vengano caricate.
 4.  Aprire la pagina `about:memory` e effettuare un’esecuzione completa del **Garbage Collector** facendo clic su <button>Minimize memory usage</button> e successivamente su <button>Measure</button>. Poiché è necessario un po’ di tempo affinché la memoria si assesti, è consigliabile effettuare l’operazione un certo numero di volte per ottenere dei valori consistenti.
 5.  Annotare l’ammontare delle allocazioni esplicite (Total GC size) e quello di `js-main-runtime-gc-heap-committed/unused/gc-things`.
 6.  Riattivare nuovamente la compattazione impostando `javascript.options.mem.gc_compacting` a `true`. Non è necessario riavviare Firefox.
 7.  Fare nuovamente clic su <button>Minimize memory usage</button> e successivamente su <button>Measure</button>.
 8.  Confrontare le letture con quelle precedenti.
 
-Questo potrebbe non dare una lettura precisa a causa di tutte le varie operazioni in atto in background, però dovrebbe consentire di avere una buona approssimazione dell’andamento generale.
+Notare che i valori ottenuti non saranno precisi a causa delle varie operazioni in atto in background, ma rappresentano comunque una’buona approssimazione.
+
 
 
 [0]: https://en.ikipedia.org/wiki/Garbage_collection_%28computer_science%29
