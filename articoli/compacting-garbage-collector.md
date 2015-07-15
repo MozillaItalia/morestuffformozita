@@ -18,7 +18,7 @@ Lo spazio libero di ciascuna arena può ancora essere impiegato per allocare nuo
 
 Di seguito è mostrato un diagramma semplificato dello *heap* con arene che contengono due diverse tipologie di celle.
 
-![heap layout smallest][1]
+![Diagramma semplificato dello *heap*][1]
 
 Si noti che se fosse possibile utilizzare lo spazio libero nell’arena 3 per allocare le celle dell’arena 5, si otterrebbe un’intera arena libera.
 
@@ -29,7 +29,7 @@ L’ammontare complessivo di memoria per ciascun tipo di cella è visualizzato n
 
 Di seguito uno screenshot dell’intera sezione `js-main-runtime-gc-heap-committed` con la compattazione del **Garbage Collector** disattivata che mostra la differenza tra spazio utilizzato e non:
 
-![unused *heap* screenshot][3]
+![Screenshot dello spazio inutilizzato nello *heap*][3]
 
 Ho effettuato misurazioni approssimative dell’utilizzo di memoria durante la mia normale navigazione con la compattazione sia attivata che disattivata per osservare le differenze. La procedura per ottenere questi dati è descritta nell’[ultima sezione](#come-calcolare-lo-spazio-liberato-con-la-compattazione) dell’articolo.
 I dati sono stati rilevati con una cinquantina di schede aperte, tra cui Google Mail, Google Calendar, varie pagine di Bugzilla e altri siti. Questo è il risultato ottenuto:
@@ -98,7 +98,7 @@ Una tale scansione globale dello *heap* sarebbe davvero dispendiosa in termini d
 
 Abbiamo però alcuni metodi per ridurre le risorse impiegate.
 Innanzitutto si noti che lo *heap* è suddiviso in più zone: una zona per ogni scheda aperta e altre zone utilizzate dal sistema.
-Dato che, di norma, le celle non contengono mai puntatori con riferimenti a zone diverse da quella in cui si trovano, la compattazione potrà essere effettuata per zona e non su tutto lo *heap*.  Il caso particolare di celle con puntatori a zone diverse da quella di appartenenza verrà effettuato a parte.
+Dato che, di norma, le celle non contengono mai puntatori con riferimenti a zone diverse da quella in cui si trovano, la compattazione potrà essere effettuata per zona e non su tutto lo *heap*. Il caso particolare di celle con puntatori a zone diverse da quella di appartenenza verrà effettuato a parte.
 La compattazione per zone ci consentirà di suddividere il processo in diverse sezioni incrementali.
 
 In secondo luogo, per costruzione, esistono delle tipologie di celle che non possono contenere puntatori a altre tipologie di celle (a essere precisi ci sono alcune tipologie di celle che non possono proprio contenere dei puntatori), è quindi possibile escludere a priori alcune celle dalla ricerca.
@@ -110,7 +110,7 @@ Infatti è possibile spostare gli oggetti solamente conoscendo quali locazioni n
 
 ## Programmare l’esecuzione di ogni compattazione
 
-Come accennato in precedenza, la compattazione non viene effettuata contestualmente all’inserimento di nuovi dati nel **Garbage Collector**.
+Come accennato in precedenza, la compattazione non viene effettuata a ogni ciclo di esecuzione del **Garbage Collector** .
 Allo stato attuale dell’implementazione essa viene effettuata nelle seguenti situazioni:
 
 -   è stata utilizzata tutta la memoria e si cerca di fare un ultimo tentativo per liberare dello spazio utile;
@@ -121,9 +121,9 @@ Nei primi due casi la compattazione viene avviata per scongiurare situazioni di 
 
 ## Conclusione
 
-Spero che questo articolo sia riuscito a spiegare il problema della compattazione del **Garbage Collector** e come stiamo cercando di affrontarlo.
+Spero che questo articolo sia riuscito a spiegare il problema che ci proponiamo di risolvere grazie allo strumento di compattazione del **Garbage Collector** e come stiamo cercando di affrontarlo.
 
-Un inaspettato effetto positivo dell’implementazione della compattazione del **Garbage Collector** è che ha rivelato alcuni errori nel *tracing* dei puntatori alle celle.
+Un inaspettato effetto positivo dell’implementazione della compattazione nel **Garbage Collector** è che ha rivelato alcuni errori nel *tracing* dei puntatori alle celle.
 E questo tipo di errori possono generare dei crash difficili da identificare e riprodurre e generare possibili falle nella sicurezza del browser, quindi possiamo considerarlo un ulteriore miglioramento anche da questo punto di vista.
 
 Idee per il futuro
@@ -132,12 +132,11 @@ L’introduzione della compattazione è stata un’importante tassello per il mi
 Ci sono ancora molti altri aspetti su cui possiamo concentrarci per migliorarlo ulteriormente.
 
 Attualmente la compattazione viene effettuata solo sugli oggetti JavaScript, ma esistono molti altri oggetti nello *heap* e estenderla anche a questi potrebbe consentirci di ottimizzare ulteriormente la memoria utilizzata.
-
+Una domanda sorge spontanea: è possibile determinare a priori se le celle contengono dei puntatori alle celle che andremo a spostare?
 Se trovassimo il modo per farlo, le risorse impiegate per la compattazione verrebbero ulteriormente ridotte.
-Se ciò fosse possibile le risorse impiegate per la compattazione verrebbero ulteriormente ridotte.
 Una possibile soluzione è scansionare lo *heap* in background, ma per farlo si renderebbe necessario individuare le modifiche effettuate alle celle dal **mutator**.
 
-L’attuale algoritmo del  **Garbage Collector** raggruppa assieme celle allocate in diversi momenti.
+L’attuale algoritmo del **Garbage Collector** raggruppa assieme celle allocate in diversi momenti.
 Solitamente, le celle che sono allocate nello stesso momento hanno una durata simile, motivo per cui questa scelta non è il massimo.
 
 Se riuscissimo a minimizzare i tempi di esecuzione della compattazione sarebbe possibile effettuarla ogni qualvolta il **Garbage Collector** rilevi un certo livello di frammentazione dello *heap*.
@@ -146,7 +145,7 @@ Se riuscissimo a minimizzare i tempi di esecuzione della compattazione sarebbe p
 
 Per stimare a grandi linee lo spazio liberato grazie alla compattazione è possibile effettuare i seguenti passaggi:
 
-1. Disattivare la compattazione aprendo la pagina `about:config` e impostando la preferenza `javascript.options.mem.gc_compacting` a `false`.
+1.  Disattivare la compattazione aprendo la pagina `about:config` e impostando la preferenza `javascript.options.mem.gc_compacting` a `false`.
 2.  Al momento attuale è preferibile disattivare la modalità multiprocesso di Firefox dal pannello Opzioni.
 3.  Riavviare Firefox e aprire alcune schede. Per guadagnare tempo è presente un’opzione che permette di ricaricare tutte le schede della sessione precedente. Attendere che le pagine vengano caricate.
 4.  Aprire la pagina `about:memory` e effettuare un’esecuzione completa del **Garbage Collector** facendo clic su <button>Minimize memory usage</button> e successivamente su <button>Measure</button>. Poiché è necessario un po’ di tempo affinché la memoria si assesti, è consigliabile effettuare l’operazione un certo numero di volte per ottenere dei valori consistenti.
@@ -159,10 +158,11 @@ Notare che i valori ottenuti non saranno precisi a causa delle varie operazioni 
 
 
 
-[0]: https://en.ikipedia.org/wiki/Garbage_collection_%28computer_science%29
-[1]:  http://i.imgur.com/jCrRTJj.png
+[0]: https://it.wikipedia.org/wiki/Garbage_collection
+[1]: http://i.imgur.com/jCrRTJj.png
 [2]: https://developer.mozilla.org/en-US/docs/Mozilla/Performance/about:memory
 [3]: http://i.imgur.com/kOnL35d.png
 [4]: https://it.wikipedia.org/wiki/Mebibyte
 [5]: https://blog.mozilla.org/javascript/2013/07/18/clawing-our-way-back-to-precision/
+
 
