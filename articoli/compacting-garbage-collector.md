@@ -108,7 +108,7 @@ Infine, possiamo parallelizzare questa operazione e sfruttare tutte le risorse d
 È importante notare che ciò è stato reso possibile solo grazie al lavoro fatto a suo tempo implementando l’**exact stack rooting**, come descritto in [questo articolo del blog Mozilla][5].
 Infatti è possibile spostare gli oggetti solamente conoscendo quali locazioni nello *stack* sono **root**, altrimenti si corre il rischio di sovrascrivere dei dati non correlati nello *stack* che potrebbero essere interpretati erroneamente come dei puntatori a celle.
 
-## Programmare l’esecuzione di ogni compattazione
+## Programmare la compattazione
 
 Come accennato in precedenza, la compattazione non viene effettuata a ogni ciclo di esecuzione del **Garbage Collector** .
 Allo stato attuale dell’implementazione essa viene effettuata nelle seguenti situazioni:
@@ -126,7 +126,7 @@ Spero che questo articolo sia riuscito a spiegare il problema che ci proponiamo 
 Un inaspettato effetto positivo dell’implementazione della compattazione nel **Garbage Collector** è che ha rivelato alcuni errori nel *tracing* dei puntatori alle celle.
 E questo tipo di errori possono generare dei crash difficili da identificare e riprodurre e generare possibili falle nella sicurezza del browser, quindi possiamo considerarlo un ulteriore miglioramento anche da questo punto di vista.
 
-Idee per il futuro
+## Idee per il futuro
 
 L’introduzione della compattazione è stata un’importante tassello per il miglioramento del **Garbage Collector** di Firefox, ma non è comunque finita qui.
 Ci sono ancora molti altri aspetti su cui possiamo concentrarci per migliorarlo ulteriormente.
@@ -141,7 +141,7 @@ Solitamente, le celle che sono allocate nello stesso momento hanno una durata si
 
 Se riuscissimo a minimizzare i tempi di esecuzione della compattazione sarebbe possibile effettuarla ogni qualvolta il **Garbage Collector** rilevi un certo livello di frammentazione dello *heap*.
 
-##Come calcolare lo spazio liberato con la compattazione
+## Come calcolare lo spazio liberato con la compattazione
 
 Per stimare a grandi linee lo spazio liberato grazie alla compattazione è possibile effettuare i seguenti passaggi:
 
