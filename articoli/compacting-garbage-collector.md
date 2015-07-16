@@ -148,7 +148,7 @@ Per stimare a grandi linee lo spazio liberato grazie alla compattazione è possi
 1.  Disattivare la compattazione aprendo la pagina `about:config` e impostando la preferenza `javascript.options.mem.gc_compacting` a `false`.
 2.  Al momento attuale è preferibile disattivare la modalità multiprocesso di Firefox dal pannello Opzioni.
 3.  Riavviare Firefox e aprire alcune schede. Per guadagnare tempo è presente un’opzione che permette di ricaricare tutte le schede della sessione precedente. Attendere che le pagine vengano caricate.
-4.  Aprire la pagina `about:memory` e effettuare un’esecuzione completa del **Garbage Collector** facendo clic su <button>Minimize memory usage</button> e successivamente su <button>Measure</button>. Poiché è necessario un po’ di tempo affinché la memoria si assesti, è consigliabile effettuare l’operazione un certo numero di volte per ottenere dei valori consistenti.
+4.  Aprire la pagina `about:memory` e effettuare un’esecuzione completa del **Garbage Collector** facendo clic su <button>Minimize memory usage</button> e successivamente su <button>Measure</button>. Poiché è necessario un po’ di tempo affinché la memoria si assesti, è consigliabile effettuare l’operazione un certo numero di volte per ottenere dei valori significativi.
 5.  Annotare l’ammontare delle allocazioni esplicite (Total GC size) e quello di `js-main-runtime-gc-heap-committed/unused/gc-things`.
 6.  Riattivare nuovamente la compattazione impostando `javascript.options.mem.gc_compacting` a `true`. Non è necessario riavviare Firefox.
 7.  Fare nuovamente clic su <button>Minimize memory usage</button> e successivamente su <button>Measure</button>.
