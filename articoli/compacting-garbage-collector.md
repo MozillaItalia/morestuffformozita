@@ -46,7 +46,7 @@ I dati sono stati rilevati con una cinquantina di schede aperte, tra cui Google 
 <td>69,58 MiB</td>
 </tr>
 <tr>
-<td>Dopo la compattazione<td>
+<td>Dopo la compattazione</td>
 <td>1296,28 MiB</td>
 <td>40,18 MiB</td>
 </tr>
