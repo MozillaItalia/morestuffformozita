@@ -1,19 +1,4 @@
 <?php
-
-// Web Browser Identifier v0.9
-// Written by Marcin Krol <hawk@limanowa.net>
-// License: free for non-commercial use
-//
-// URL: http://id.furud.net/
-// Modified by X3mE and gialloporpora
-
-
-if (!defined('SMF'))
-	die('Hacking attempt...');
-
-
-
-
 function maxversion($v){
 		$a=explode(".", $v);
 		return $a[0].".".$a[1];
@@ -23,6 +8,8 @@ function nicewinversion($v){
 	$v=strtolower($v);
 	if ($v=="5.01") $v="5.0";
 	switch($v){
+		case "6.2": $t["system"] =" Windows 8";$t["system_icon"] ="win8";break;
+		case "6.3": $t["system"] =" Windows 8.1";$t["system_icon"] ="win81";break;
 			case "6.1": $t["system"] =" Windows 7/Server 2008 R2";$t["system_icon"] ="vista";break;
 			case "6.0": $t["system"] = "Windows Vista";$t["system_icon"] ="vista";break;
 			case "5.2": $t["system"] ="Windows Server Home/Server 2003";$t["system_icon"] = "win_new";break;
@@ -31,7 +18,7 @@ function nicewinversion($v){
 			case "16": $t["system"] = "Windows 3.x";$t["system_icon"] = "win_old";break;
 			case "32": $t["system"] = "Windows";$t["system_icon"] = "win_old";break;
 			case "me": $t["system"] = "Windows Millenium";$t["system_icon"] = "win_old";break;
-			default:$t["system"] = "Windows ".$v;$t["system_icon"] = "win_old";break;
+			default:$t["system"] = "Windows ".$v;$t["system_icon"] = "win_new";break;
 	}
 	return $t;
 }
@@ -40,14 +27,18 @@ function nicewinversion($v){
 
 
 function nicemacversion($v){
-	switch (maxversion($v)){
-			case "10.1": $v ="Puma";break;
-			case "10.2":$v="Jaguar";break;
-			case "10.3":$v="Panther";break;
-			case "10.4":$v="Tiger";break;
-			case "10.5":$v="Leopard";break;
-			case "10.6":$v="Snow Leopard";break;
-			case "10.7":$v="Lion";break;
+	$v2 = $v."a";
+	switch (maxversion($v2)){
+			case "10.1a": $v ="Puma";break;
+			case "10.2a":$v="Jaguar";break;
+			case "10.3a":$v="Panther";break;
+			case "10.4a":$v="Tiger";break;
+			case "10.5a":$v="Leopard";break;
+			case "10.6a":$v="Snow Leopard";break;
+			case "10.7a":$v="Lion";break;
+			case "10.8a":$v="Mountain Lion";break;
+			case "10.9a":$v="Mavericks";break;
+			case "10.10a":$v="Yosemite";break;
 			default: $v=false;break;
 	}
 	return $v;
@@ -204,14 +195,29 @@ function detectBrowser2($ua, &$client_data) {
       $client_data['browser_icon'] = 'fennec';
       }
       
-      /* Pale Moon */
-      
-      elseif(preg_match('/mozilla.*rv:[0-9\.]+.*gecko\/[0-9]+.*Palemoon\/([0-9a-z\+\-\.]+).*/si', $us, $matches) )
+      // Palemoon
+      elseif(preg_match('/mozilla.*rv:[0-9\.]+.*gecko\/[0-9]+.*Palemoon\/([0-9a-z\+\-\.]+).*/si', $ua, $matches) )
       {
       $client_data['browser'] = "Pale Moon" . ($matches[1] ? " ".$matches[1] : "");
       $client_data['browser_icon'] = 'palemoon';
       }
       
+      // Waterfox
+      elseif(preg_match('/mozilla.*rv:[0-9\.]+.*gecko\/[0-9]+.*WaterFox\/([0-9a-z\+\-\.]+).*/si', $ua, $matches) )
+      {
+      $client_data['browser'] = "WaterFox" . ($matches[1] ? " ".$matches[1] : "");
+      $client_data['browser_icon'] = 'waterfox';
+      }
+      
+      
+      
+      /* Cometbird */
+      
+            elseif(preg_match('/mozilla.*rv:[0-9\.]+.*gecko\/[0-9]+.*Cometbird\/([0-9a-z\+\-\.]+).*/si', $ua, $matches) )
+      {
+      $client_data['browser'] = "Cometbird" . ($matches[1] ? " ".$matches[1] : "");
+      $client_data['browser_icon'] = 'cometbird';
+      }
     // Firefox
     elseif(preg_match('/mozilla.*rv:[0-9\.]+.*gecko\/[0-9]+.*firefox\/([0-9a-z\+\-\.]+).*/si', $ua, $matches) )
       {
@@ -286,7 +292,7 @@ function detectBrowser2($ua, &$client_data) {
       
       // Other Gecko based browser
 
-    elseif(preg_match('/mozilla.*rv:([0-9\.]+).*gecko\/[0-9]+ ([\w]+)\/([\d\.]+)*/si', $ua, $matches) )
+    elseif(preg_match('/mozilla.*rv:([0-9\.]+).*gecko\/[0-9]+ ([\w\s]+)\/([\d\.]+)*/si', $ua, $matches) )
       {
       $client_data['browser'] = $matches[2]." ".$matches[3]. " (Gecko".$matches[1]." ".$txt['OS_Browser_Compatible'].")";
       $client_data['browser_icon'] = "deerpark";
@@ -319,15 +325,6 @@ function detectBrowser2($ua, &$client_data) {
         $client_data['browser'] = "Opera " . $matches[1];
         }
     }
-    
-    // QtWeb Internet Browser
-    
-    elseif(preg_match('/mozilla.*AppleWebkit.*QtWeb Internet Browser\/([0-9\.]+)/si', $ua, $matches) )
-    {
-	    	$client_data["browser"] ="QtWeb Internet Browser ".$matches[1];
-	    	$client_data["browser_icon"] = "qtweb";
-    }
-    
 
     // OmniWeb
     elseif(preg_match('/mozilla.*applewebkit\/[0-9]+.*omniweb\/v[0-9\.]+/si', $ua, $matches) )
@@ -389,6 +386,35 @@ function detectBrowser2($ua, &$client_data) {
       $client_data['browser'] = "Chromium" . ($matches[1] ? " ".$matches[1] : "");
       $client_data['browser_icon'] = 'chromium';
       }
+      
+      // Comodo Dragon 
+    
+    elseif(preg_match('/mozilla.*applewebkit.*Comodo_Dragon\/([0-9\.]+)/si', $ua, $matches) ) {
+			$client_data['browser'] = "Comodo Dragon" . ($matches[1] ? " ".$matches[1] : "");
+      $client_data['browser_icon'] = 'dragon';
+    }
+    
+    // Edge by Mycrosoft
+    
+    elseif(preg_match('/mozilla.*applewebkit.*Edge\/([0-9\.]+)/si', $ua, $matches) ) {
+			$client_data['browser'] = "Edge" . ($matches[1] ? " ".$matches[1] : "");
+      $client_data['browser_icon'] = 'edge';
+    }
+    
+    // Vivaldi
+    
+    elseif(preg_match('/mozilla.*applewebkit.*Vivaldi\/([0-9\.]+)/si', $ua, $matches) ) {
+			$client_data['browser'] = "Vivaldi" . ($matches[1] ? " ".$matches[1] : "");
+      $client_data['browser_icon'] = 'vivaldi';
+    }
+    // Dooble
+    
+    elseif(preg_match('/mozilla.*applewebkit.*Dooble\/([0-9\.]+)/si', $ua, $matches) ) {
+			$client_data['browser'] = "Dooble Web Browser" . ($matches[1] ? " ".$matches[1] : "");
+      $client_data['browser_icon'] = 'dooble';
+    }
+    
+    
 
     // Chrome
     elseif(preg_match('/mozilla.*applewebkit.*chrome\/([0-9a-z\+\-\.]+).*/si', $ua, $matches)  )
@@ -463,14 +489,6 @@ function detectBrowser2($ua, &$client_data) {
       $client_data['browser_icon'] = 'dillo';
       }
       
-      // Nokia browser
-      
-      elseif(preg_match('/Mozilla\/5\.0.*AppleWebkit.*BrowserNG\/([0-9a-z\+\-\.]+).*/si', $ua, $matches) )
-      {
-	      	$client_data["browser"] = "Browser NG ".$matches[1];
-	      	$client_data["browser_icon"] = "browserng";
-      }
-      
       // Dolfin
       elseif(preg_match('/Dolfin\/([0-9a-z\+\-\.]+).*/si', $ua, $matches) )
       {
@@ -490,6 +508,22 @@ function detectBrowser2($ua, &$client_data) {
       {
       $client_data['browser'] = "iCab" . ($matches[1] ? " ".$matches[1] : "");
       $client_data['browser_icon'] = 'icab';
+      }
+      
+      // Tapatalk
+      
+      elseif (preg_match("/Mozilla\/5\.0.*\bTapatalk\b/si", $ua, $matches)){
+	     $client_data["browser"] = "Tapatalk";
+	     $client_data["browser_icon"] = "tapatalk";
+     }
+     
+      
+      // W3M
+      
+      elseif(preg_match('/^w3m\/([0-9a-z\.]+).*/si', $ua, $matches) )
+      {
+      $client_data['browser'] = "W3M" . ($matches[1] ? " ".$matches[1] : "");
+      $client_data['browser_icon'] = 'w3m';
       }
 
     // Lynx
@@ -584,15 +618,6 @@ function detectBrowser2($ua, &$client_data) {
       $client_data['browser'] = "Netscape Navigator" . ($matches[1] ? " ".$matches[1] : "");
       $client_data['browser_icon'] = 'netscape_old';
       }
-      
-      // Safari (without version)
-      
-          // Safari (use version string if available)
-    elseif(preg_match('/mozilla.*applewebkit.*.*safari\/[0-9a-z\+\-\.]+/si', $ua, $matches))
-      {
-      $client_data['browser'] = "Safari";
-      $client_data['browser_icon'] = 'safari';
-			}
 
     // Catch all for other Webkit compatible browser
     elseif(preg_match('/Webkit|KHTML/si', $ua, $matches) )
@@ -609,7 +634,7 @@ function detectBrowser2($ua, &$client_data) {
 }   // End of detect browser function
 
 function detectSystem($ua, &$client_data){
-	$client_data["system"] = "";
+	// $client_data["system"] = "";
 	
 	    // Windows
     if(preg_match('/Windows nt ([0-9\.]+).*/si',	 $ua, $matches) ||  preg_match('/Windows (me)/si', $ua, $matches) || preg_match('/Windows ([\d\.]+)/si', $ua, $matches)  )
@@ -631,7 +656,7 @@ function detectSystem($ua, &$client_data){
 
    elseif (preg_match('/Android[\b\s]*([\d\.]+)*.*/si', $ua, $matches)) 
         {
-	        $client_data["system"].=($matches[1]) ? " Android ".$matches[1] : "Android";
+	        $client_data["system"].=(isset( $matches[1])) ? " Android ".$matches[1] : "Android";
 	        $client_data["system_icon"] = "android";
         }
     // Linux
@@ -718,7 +743,7 @@ function detectSystem($ua, &$client_data){
         	$client_data["system_icon"] = "ubuntu";
       }
 	        	
-			// Slackware
+			// Slachware
 			
       elseif(preg_match('/slackware/si', $ua))
         {
@@ -825,19 +850,10 @@ function detectSystem($ua, &$client_data){
       elseif(preg_match('/mac os x(?:\s|\b)([0-9\._]+)?/si', $ua, $matches)){
         $client_data['system'] .= " X";
        $matches[1]=str_replace("_",".", $matches[1]);
-        $client_data['system'] .= ($matches[1]) ? " ".$matches[1]." ".nicemacversion($matches[1]) : "";
+        $client_data['system'] .= (isset($matches[1])) ? " ".$matches[1]." ".nicemacversion($matches[1]) : "";
       }
    }  // End of user agent that contain Linux
    
-   
-   //Firefox OS
-   
-   elseif(preg_match('/Mozilla\/5\.0 \(Mobile; rv:([0-9\.]+).*/s', $ua, $matches))
-   {
-	   	/* $client_data['system'] = "Firefox OS" . ($matches[1] ? " ".$matches[1] : "");  */
-	   	$client_data['system'] = "Firefox OS";
-	   	$client_data['system_icon'] = "b2g";
-   }
    
    
     // ReactOS
@@ -911,7 +927,7 @@ function detectSystem($ua, &$client_data){
       }
 
     // Symbian Os
-    elseif(preg_match('/symbian|SymbOS/si', $us) )
+    elseif(preg_match('/symbian|SymbOS/si', $ua) )
       {
       $client_data['system'] = "Symbian OS";
       $client_data['system_icon'] = "symbian";
@@ -954,7 +970,8 @@ function detectSystem($ua, &$client_data){
      }
 
     // Try to detect some mobile devices...
-    
+
+        
     $client_data["pda"]="";
     // Nokia
     if(preg_match('/Nokia[ ]{0,1}([0-9a-zA-Z\+\-\.]+){0,1}.*/s', $ua, $matches)) $client_data['pda']= "Nokia" . ($matches[1] ? " ".$matches[1] : "");
@@ -964,6 +981,11 @@ function detectSystem($ua, &$client_data){
 	$client_data['pda'] = "Motorola" . ($matches[1] ? " ".$matches[1] : "");
     elseif(preg_match('/sie\-([0-9a-zA-Z\+\-\.]+){0,1}\//si', $ua, $matches)) $client_data['pda'] = "Siemens" . ($matches[1] ? " ".$matches[1] : "");
     
+    // Kindle
+    elseif (preg_match("/Mozilla\/5\.0.*\bKindle|Silk\b/si", $ua, $matches)){
+	     $client_data['system'] = "Kindle";
+	     $client_data["system_icon"] = "kindle";
+     }
     // Samsung
     elseif(preg_match('/samsung\-([0-9a-zA-Z\+\-\.]+){0,1}\//si', $ua, $matches)) $client_data['pda'] = "Samsung" . ($matches[1] ? " ".$matches[1] : "");
     // SonyEricsson & Ericsson
