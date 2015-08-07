@@ -18,7 +18,7 @@ function nicewinversion($v){
 			case "16": $t["system"] = "Windows 3.x";$t["system_icon"] = "win_old";break;
 			case "32": $t["system"] = "Windows";$t["system_icon"] = "win_old";break;
 			case "me": $t["system"] = "Windows Millenium";$t["system_icon"] = "win_old";break;
-			default:$t["system"] = "Windows ".$v;$t["system_icon"] = "win_new";break;
+			default:$t["system"] = "Windows ".$v;$t["system_icon"] = "winnextgen";break;
 	}
 	return $t;
 }
