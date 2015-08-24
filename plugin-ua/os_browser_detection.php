@@ -18,7 +18,7 @@ function nicewinversion($v){
 			case "16": $t["system"] = "Windows 3.x";$t["system_icon"] = "win_old";break;
 			case "32": $t["system"] = "Windows";$t["system_icon"] = "win_old";break;
 			case "me": $t["system"] = "Windows Millenium";$t["system_icon"] = "win_old";break;
-			default:$t["system"] = "Windows ".$v;$t["system_icon"] = "winnextgen";break;
+			default:$t["system"] = "Windows ".$v;$t["system_icon"] = "win_new";break;
 	}
 	return $t;
 }
@@ -401,7 +401,7 @@ function detectBrowser2($ua, &$client_data) {
       $client_data['browser_icon'] = 'edge';
     }
     
-    // Vivaldi
+    // vivaldi
     
     elseif(preg_match('/mozilla.*applewebkit.*Vivaldi\/([0-9\.]+)/si', $ua, $matches) ) {
 			$client_data['browser'] = "Vivaldi" . ($matches[1] ? " ".$matches[1] : "");
@@ -469,6 +469,14 @@ function detectBrowser2($ua, &$client_data) {
       $client_data['browser_icon'] = 'msie';
       }
     elseif(preg_match('/mozilla.*MSIE ([0-9a-z\+\-\.]+).*/si', $ua, $matches) )
+      {
+      $client_data['browser'] = "MS Internet Explorer" . ($matches[1] ? " ".$matches[1] : "");
+      $client_data['browser_icon'] = 'msie';
+      }
+      
+      // Internet Explorer 11+
+      
+      elseif(preg_match('/mozilla\/5\.0.*Trident.*MAARJS; rv:([0-9a-z\+\-\.]+).*/si', $ua, $matches) )
       {
       $client_data['browser'] = "MS Internet Explorer" . ($matches[1] ? " ".$matches[1] : "");
       $client_data['browser_icon'] = 'msie';
