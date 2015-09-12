@@ -27,33 +27,28 @@
 </ul>
 <p>Dal punto di vista degli sviluppatori web la novità più interessante è rappresentata dall’introduzione di un API JavaScript mediante la quale è possibile, fra le altre cose, inviare del testo alla clipboard. Uno dei motivi per cui su molti siti si ricorre ancora alla tecnologia Adobe Flash è proprio per effettuare l’operazione di copia negli appunti (ad esempio su Github). Questa novità consentirà sempre più di abbandonare il plugin Flash e creare siti e applicazioni che sfruttino i soli standard web (HTML5, CSS e JavaScript). Per ulteriori informazioni su questa nuova API Javascript leggete l’articolo di Mozilla hacks “<a href="http://mzl.la/1hRAAlH">Flash free clipboard for the Web</a>”, qui di seguito un piccolo esempio.</p>
 <input type="text" id="messagetoclipboard" value="Ciao da Firefox 41"/>
-<button id="copytoclipboard">Copia in clipboard</button>
+<button id="copytoclipboard" onclick="copyToClipboard(document.querySelector('#messagetoclipboard'));">Copia in clipboard</button>
 <p>Qui un altro esempio che copia negli appunti il testo di questo articolo:</p>
-<button id="copytoclipboard2">Copia l’articolo nella clipboard</button>
+<button id="copytoclipboard2" onclick="copyToClipboard(document.querySelector('.entry'));">Copia l’articolo nella clipboard</button>
 <script type="text/javascript">
-// selezioniamo il pulsante a cui attaccheremo la funzione quando viene rilevato un evento click
-var button = document.getElementById("copytoclipboard");
-// selezioniamo l'elemento di tipo input che contiene il testo da copiare nella clipboard
-var input = document.getElementById("messagetoclipboard");
-button.addEventListener("click", function(event) {
-  event.preventDefault();
-// selezioniamo il testo del tag input
-  input.select();
-  // copiamolo nella clipboard
-  document.execCommand("copy");
-});
-var button2 = document.querySelector("#copytoclipboard2");
-button2.addEventListener("click", function(event) {
-  event.preventDefault();
-var sel = window.getSelection();
-sel.removeAllRanges();
-var r1 = document.createRange();
-var el = document.querySelector(".entry");
-r1.setStartBefore(el);
-r1.setEndAfter(el) ;
-sel.addRange(r1);
-document.execCommand("copy");
-});
+selectObjectContent = function(el){
+		try{
+		el.select(); // some elements have a .select() method to select text, for example input elements.
+	}
+	catch(e){
+		var sel = window.getSelection();
+		sel.removeAllRanges();
+		var r1 = document.createRange();
+		r1.setStartBefore(el);
+		r1.setEndAfter(el) ;
+			sel.addRange(r1);
+	}
+}
+
+copyToClipboard = function(el){
+	selectObjectContent(el);
+	document.execCommand("copy");
+}
 </script>
 <p>Per le altre novità riguardanti gli sviluppatori, oltre che alle note di versione in lingua inglese, vi rimandiamo agli articoli di <a href="https://hacks.mozilla.org/" title="hacks.mozilla.org">Moz Hacks</a> e <a href="https://developer.mozilla.org/it/Firefox/Releases/41">MDN</a> che trattano in dettaglio questi argomenti.</p>
 <p>Per qualunque problema con il nuovo aggiornamento o qualsiasi altro di natura generale con Firefox venite a trovarci sul <a href="http://forum.mozillaitalia.org">forum</a>, faremo del nostro meglio per aiutarvi a risolverlo.</p>
