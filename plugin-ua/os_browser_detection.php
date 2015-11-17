@@ -39,6 +39,7 @@ function nicemacversion($v){
 			case "10.8a":$v="Mountain Lion";break;
 			case "10.9a":$v="Mavericks";break;
 			case "10.10a":$v="Yosemite";break;
+			case "10.11a":$v="El Capitan";break;
 			default: $v=false;break;
 	}
 	return $v;
@@ -218,6 +219,7 @@ function detectBrowser2($ua, &$client_data) {
       $client_data['browser'] = "Cometbird" . ($matches[1] ? " ".$matches[1] : "");
       $client_data['browser_icon'] = 'cometbird';
       }
+      
     // Firefox
     elseif(preg_match('/mozilla.*rv:[0-9\.]+.*gecko\/[0-9]+.*firefox\/([0-9a-z\+\-\.]+).*/si', $ua, $matches) )
       {
@@ -626,6 +628,14 @@ function detectBrowser2($ua, &$client_data) {
       $client_data['browser'] = "Netscape Navigator" . ($matches[1] ? " ".$matches[1] : "");
       $client_data['browser_icon'] = 'netscape_old';
       }
+      
+      // Firefox for iOS
+      
+      elseif(preg_match('/Mozilla\/5\.0.*\(KHTML, like Gecko\) FxiOS\/([0-9\.]+).*/si', $ua, $matches) )
+      {
+	      	$client_data['browser'] = "Firefox per iOS" . ($matches[1] ? " ".$matches[1] : "");
+	      	$client_data['browser_icon'] = 'firefox';
+      	}
 
     // Catch all for other Webkit compatible browser
     elseif(preg_match('/Webkit|KHTML/si', $ua, $matches) )
