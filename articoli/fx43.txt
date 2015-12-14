@@ -1,0 +1,44 @@
+<p><img src="http://www.mozillaitalia.org/home/wp-content/uploads/2015/07/966px-Mozilla_Firefox_logo_2013.svg_-283x300.png" alt="Logo Mozilla Firefox" width="283" height="300" class="alignright size-medium wp-image-1748" />
+
+È disponibile la versione 43.0 di Firefox.
+Da mercoledì 15 dicembre è iniziata la distribuzione degli aggiornamenti automatici, Se **Firefox** non si è ancora aggiornato potete farlo manualmente seguendo le istruzioni riportate in [questo articolo della KB Mozilla][update].
+
+Sarà questa l’ultima versione del 2015 di Firefox, iniziato con il rilascio della versione 35.0 il 13 gennaio.
+Di seguito alcune delle novità principali di questa versione, per un elenco completo fate riferimento alle [note di versione][nv] in inglese.
+
+Rispetto alla versione precedente, ci sono meno novità per quanto riguarda i comuni utenti, molte invece le novità per gli sviluppatori.
+
+-   Ora è possibile visualizzare i suggerimenti di ricerca nella barra degli indirizzi, aka **awesome bar**.
+    È possibile attivare o disattivare questa funzione dal pannello **Ricerca** delle opzioni di Firefox.
+-   Ora è possibile specificare una lista aggiuntiva di elementi bloccabili alla protezione antitracciamento.
+    Per ulteriori informazioni sulla **protezione antitracciamento** fate riferimento a [questo articolo][pa] del sito di supporto di Firefox.
+-   Migliorata la riproduzione e le API per la gestione dei flussi video **m4v**.
+-   Ora è possibile utilizzare schermi multipli per i flussi [WebRTC][webrtc], il protocollo per le chat video utilizzato da **Firefox Hello**.
+    Non avete mai utilizzato *Firefox Hello*?
+    Beh, allora questo è il momento giusto per iniziare una conversazione con gli amici! :-)
+    Per ulteriori informazioni potete fare riferimento a [questo articolo](hello) della Knowledge Base di Firefox, SUMo per gli amici.
+-   Nei sistemi Microsoft successivi a Windows 8, selezionando un campo di input apparirà automaticamente la *tastiera su schermo* di sistema.
+-   Nei sistemi Linux invece è stato implementato il supporto delle librerie grafiche **GTK3**.
+
+Come al solito molte novità riguardano il supporto a nuove caratteristiche di HTML5 e gli strumenti di sviluppo web.
+Fra le altre cose ora è possibile specificare una risoluzione per gli screenshot catturati utilizzando il relativo comando dell’interfaccia da riga di comando (**CLI**).
+Questa funzione, che può tornare utile anche ai “non sviluppatori”, consente di catturare uno screenshot della pagina e di salvarla come file o di caricarla sul sito [imgur.com][4] semplicemente premendo **Shift+F2** e digitando `screenshot nomefile` o `screenshot imgur`. Per ulteriori informazioni su tutte le opzioni disponibili è sufficiente digitare `help screenshot`.
+
+Per le altre novità riguardanti gli sviluppatori, oltre che alle note di versione in lingua inglese, vi rimandiamo agli articoli di [Moz Hacks][5] e [MDN][6] che trattano in dettaglio questi argomenti.
+
+![Masala, la lady panda rosso scappata dallo zoo di Eureka (California][7]
+
+Per qualunque problema con il nuovo aggiornamento o qualsiasi altro di natura generale con Firefox venite a trovarci sul [forum][8], faremo del nostro meglio per aiutarvi a risolverlo.
+
+Un augurio di buone feste a tutti.
+
+[update]: http://mzl.la/152VFwM
+[nv]: https://www.mozilla.org/en-US/firefox/43.0/releasenotes/
+[4]: http://imgur.com
+[5]: https://hacks.mozilla.org/2015/12/trainspotting-firefox-43/
+[6]: https://developer.mozilla.org/it/Firefox/Releases/43
+[7]: http://sfist.com/attachments/sfist_caleb/12246632_10153110753406587_2936131659007473818_n.jpg
+[8]: http://forum.mozillaitalia.org
+[hello]: http://mzl.la/1BsPeoV
+[webrtc]: https://it.wikipedia.org/wiki/WebRTC
+[pa]: http://mzl.la/1FJnEt1
