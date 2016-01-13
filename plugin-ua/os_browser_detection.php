@@ -224,7 +224,7 @@ function detectBrowser2($ua, &$client_data) {
     elseif(preg_match('/mozilla\/5\.0.*rv:[0-9\.]+.*gecko\/[0-9]+.*firefox\/([0-9a-z\+\-\.]+).*/si', $ua, $matches) )
       {
       $client_data['browser'] = "Firefox" . ($matches[1] ? " ".$matches[1] : "");
-       if (preg_match('/.*;.* x64;/si', $ua)) $client_data["browser"].= "(64 bit)";
+       if (preg_match('/.*;.* x64;/si', $ua)) $client_data["browser"].= " (64 bit)";
       $client_data['browser_icon'] = 'firefox';
       }
 
