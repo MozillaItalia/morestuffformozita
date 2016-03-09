@@ -27,19 +27,20 @@ function nicewinversion($v){
 
 
 function nicemacversion($v){
-	$v2 = $v."a";
-	switch (maxversion($v2)){
-			case "10.1a": $v ="Puma";break;
-			case "10.2a":$v="Jaguar";break;
-			case "10.3a":$v="Panther";break;
-			case "10.4a":$v="Tiger";break;
-			case "10.5a":$v="Leopard";break;
-			case "10.6a":$v="Snow Leopard";break;
-			case "10.7a":$v="Lion";break;
-			case "10.8a":$v="Mountain Lion";break;
-			case "10.9a":$v="Mavericks";break;
-			case "10.10a":$v="Yosemite";break;
-			case "10.11a":$v="El Capitan";break;
+	$v2 =  maxversion($v);
+	switch (true){
+			case $v2==="10.1": $v ="Puma";break;
+			case $v2==="10.2":$v="Jaguar";break;
+			case $v2==="10.3":$v="Panther";break;
+			case $v2==="10.4":$v="Tiger";break;
+			case $v2==="10.5":$v="Leopard";break;
+			case $v2==="10.6":$v="Snow Leopard";break;
+			case $v2==="10.7":$v="Lion";break;
+			case $v2==="10.8":$v="Mountain Lion";break;
+			case $v2==="10.9":$v="Mavericks";break;
+			case $v2==="10.10":$v="Yosemite";break;
+			case $v2==="10.11":$v="El Capitan";break;
+			case $v2==="10.12":$v="Fuji";break;
 			default: $v=false;break;
 	}
 	return $v;
