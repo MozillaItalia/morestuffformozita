@@ -1,4 +1,3 @@
-
 &hellip;	in corso…	è l'entità HTML per i tre puntini di sospensione. Quando un'operazione è in esecuzione usare la forma Operazione in corso… seguita, anche se non ci sono nell'originale dai tre puntini di sospensione. Esempio "purchasing…" "Acquisto in corso…" Si può sia mettere il simbolo sia usare &hellip; 
 501(c)(3)	501(c)(3)	è un'espressione che fa riferimento all'articolo e alle sezioni in cui si definisce la ragione di Mozilla, in pratica un'organizzazione 501(c)(3) è un ente benefico esentata dalle imposte e che può ricevere donazioni.
 API	API	Acronimo di Application Programming Interface, Interfaccia per la programmazione di un'applicazione. Se si riferisce a un'API specifica lasciare in inglese, se si riferisce alle API di un software o sito web usare API di (software/servizio). I nomi delle API li lasciamo in inglese.
@@ -42,7 +41,7 @@ Except where otherwise	Eccetto dove diversamente (altrimenti) indicato
 FAQ	FAQ	Acronimo di Frequently Asked Questions (Domande più frequenti)
 Firefox Accounts	Account Firefox	quando è da solo usare Account Firefox (A maiuscola), quando ci si riferisce proprio all'account Firefox usare la a minuscola.
 Firefox Health Report	Analisi integrità di Firefox	
-Firefox Marketplace	Firefox Marketplace	non usare articoli, es. di Firefox Marketplace, su Firefox Markeplace
+Firefox Marketplace	Firefox Marketplace	non usare articoli, es. di Firefox Marketplace, su Firefox Marketplace
 Firefox OS 	Firefox OS
 Firefox OS Simulator	Firefox OS Simulator
 Firefox healt report	valutazione integrità di Firefox
@@ -89,6 +88,7 @@ Performance	prestazione/i
 Permalink	Permalink
 Permission	permesso, autorizzazione
 Postback URL	URL per il postback	È un indirizzo (indirizzo web) al quale notificare i riaccrediti
+private tab	scheda anonima	
 Proprietary software	software proprietario	software privato
 Publish	pubblicare	quando riferito a un'app o addon usare caricare, inviare.
 Purchase	comprare, acquistare.	Purchase for, acquista a.
@@ -125,7 +125,7 @@ Unfortunately	purtroppo
 Unsent Messages	Da inviare	
 Up & Coming	In evidenza	
 Up & Coming	emergenti	
-Users Singnups	Utenti registrati	
+Users Signups	Utenti registrati	
 VAT Number	partita IVA	
 Version Notes	note di versione	
 Website	sito web	
@@ -718,9 +718,10 @@ support	supporto	supporto è da preferirsi, ma anche aiuto, assistenza, integrar
 support site	Sito di supporto	
 survey	sondaggio	
 suspect	sospetti, ritieni	ritieni che (cosa) stia violando
+swipe	scorrimento	scorrere (con le dita) su smartphone
 tab box	riquadro a schede	
 tag	etichetta, tag	ma si può anche lasciare tag, dipende dal contesto. Su Amo e nei software è stato tradotto con etichetta
-tap	tocco	
+tap	tocco	usato anche come verbo, toccare
 target	destinazione	
 target	target	obiettivo. Ma anche di riferimento, pubblico, se usato come verbo rivolgere
 task	attività	
@@ -738,6 +739,7 @@ thoroughly	a fondo
 thread	discussione	se si riferisce a un sottoprocesso di un'applicazione lasciare in inglese
 tile	motivo di sfondo. Per i pannelli della pagina nuova scheda usare riquadro.
 tip/tooltip 	suggerimento	
+today widget	 schermata Oggi del centro notifiche, contenitore di widget nei sistemi iOS
 to check	selezionare	per una casella di spunta
 to choose	scegliere	per indicare l’utilizzo di una particolare voce di menu, o su pulsanti, titoli di finestre di dialogo per l’individuazione di un file/cartella/elemento utilizzare "selezionare"
 to forward	inoltrare	un messaggio
@@ -798,6 +800,7 @@ wait	attendere	waiting (è in attesa…)
 warning	avviso	
 watch	guardare	
 way	metodo, modo, maniera,	dipende dal contesto
+web font	web font sono i font scaricati direttamente dal web, lasciare in inglese
 web site 	sito web	
 web standards	standard web, tecnologie standardizzate del Web	
 webinar	webinar	seminario online
