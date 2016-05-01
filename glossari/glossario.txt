@@ -718,9 +718,10 @@ support	supporto	supporto è da preferirsi, ma anche aiuto, assistenza, integrar
 support site	Sito di supporto	
 survey	sondaggio	
 suspect	sospetti, ritieni	ritieni che (cosa) stia violando
+swipe	scorrere	scorimento (con le dita) su smartphone
 tab box	riquadro a schede	
 tag	etichetta, tag	ma si può anche lasciare tag, dipende dal contesto. Su Amo e nei software è stato tradotto con etichetta
-tap	tocco	
+tap	tocco	usato anche come verbo, toccare
 target	destinazione	
 target	target	obiettivo. Ma anche di riferimento, pubblico, se usato come verbo rivolgere
 task	attività	
@@ -738,6 +739,7 @@ thoroughly	a fondo
 thread	discussione	se si riferisce a un sottoprocesso di un'applicazione lasciare in inglese
 tile	motivo di sfondo. Per i pannelli della pagina nuova scheda usare riquadro.
 tip/tooltip 	suggerimento	
+today widget	vista oggi	insieme di widget dei sistemi iOS
 to check	selezionare	per una casella di spunta
 to choose	scegliere	per indicare l’utilizzo di una particolare voce di menu, o su pulsanti, titoli di finestre di dialogo per l’individuazione di un file/cartella/elemento utilizzare "selezionare"
 to forward	inoltrare	un messaggio
