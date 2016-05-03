@@ -718,7 +718,7 @@ support	supporto	supporto è da preferirsi, ma anche aiuto, assistenza, integrar
 support site	Sito di supporto	
 survey	sondaggio	
 suspect	sospetti, ritieni	ritieni che (cosa) stia violando
-swipe	scorrimento	scorrere (con le dita) su smartphone
+swipe	scorrere	scorimento (con le dita) su smartphone
 tab box	riquadro a schede	
 tag	etichetta, tag	ma si può anche lasciare tag, dipende dal contesto. Su Amo e nei software è stato tradotto con etichetta
 tap	tocco	usato anche come verbo, toccare
