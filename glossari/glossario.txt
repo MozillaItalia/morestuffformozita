@@ -16,6 +16,7 @@ CSS	CSS	Acronimo di Cascading Style Sheet (Foglio di stile a cascata), si può a
 CTO	CTO	Acronimo per Chief technical officer (stratega e consulente tecnologico)
 Certificate Authority	Autorità di Certificazione (CA)	
 Chairperson	presidente	
+champion	paladino	il senso prevalente in inglese è quello di campione inteso come difensore di qualcosa o qualcuno (il campione che nei duelli rappresentava un signore).
 Clear	cancella	non usare pulisci che mi sembra sia meno usato come traducente (almeno in ambito software)
 Comic Mischief	Comicità grossolana o allusiva	#descrittore
 Component Object model	modello a oggetti per componenti 	
@@ -34,7 +35,8 @@ Developer Preview Phone	prototipo per sviluppatori
 Developer Tools dashboard	Dashboard Strumenti di sviluppo	
 Directory Tiles	Riquadri catalogo	
 Doc	Documentazione	
-Editor	revisore	
+Editor	editore	revisore	
+editorial review	revisione stilistica (su MDN)
 End user	utente finale	
 Enhanced Tiles	Riquadri dinamici	
 Except where otherwise	Eccetto dove diversamente (altrimenti) indicato	
@@ -772,6 +774,7 @@ typically	normalmente	in genere, di solito, tipicamente
 unable	non in grado	non sei capace, non sei in grado
 unavailable	non disponibile	
 undone	annullato	
+unexpected	inatteso	
 unit	unità	di app vendute
 unit testing	unit testing	
 unlisted	parzialmente pubblica, stato di visibilità dell'app. Non appare nelle ricerche e nelle pagine di presentazione. Può visualizzarla solo chi conosce il link alla pagina dell'app.
