@@ -8,6 +8,7 @@ Application Secret	Application Secret
 Applications directory	cartella applicazioni	
 B2G	B2G	Acronimo di Boot To Gecko, nome in codice di Firefox OS
 Be careful	fai attenzione	
+brand new	completamente nuovo	(da non confondere con il brand che è il marchio)
 Breakdown	analisi	di solito riferito al codice sorgente
 Browse listing…	Ordina per	
 BrowserID	Mozilla Persona	
@@ -625,7 +626,6 @@ require	è obbligatorio	è necessario
 required	richiesto, obbligatorio, è necessario	di solito si riferisce a un campo in un modulo, se è un requisito (is required) è necessario o è richiesto
 requires	necessita, ha bisogno, richiede	
 rereview	nuova revisione	viene richiesta una nuova revisione quando le estensioni ricevono segnalazioni di abuso.
-reset	reimposta	
 reset	reimpostare	ripristinare
 resource	risorsa	
 responsive design	design reattivo	
@@ -641,8 +641,8 @@ retrieve	recuperare
 return payment	resi di pagamento	
 return receipt	ricevuta di ritorno	
 revenue stream	flusso di entrate	
-review	revisione	recensione (user)
-review	revisione, commento	Nel sito dipende, ahimé, dal contesto. Usato anche processo di revisione
+revert	annulla modifiche	ripristinare. Indica l'operazione con cui si annullano le modifiche fatte in una versione di un documento.
+review	revisione, recensione	Nel sito dipende, ahimé, dal contesto. Usato anche processo di revisione.
 reviewed	revisionato, verificato, recensito	Nei commenti diventa recensito, se invece si riferisce al processo di revisione dei revisori diventa esaminato o verificato
 reviewer	revisore	se ci si sta riferendo a un commento anche moderatore
 revoke	revocare	
