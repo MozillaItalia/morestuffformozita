@@ -18,6 +18,7 @@ CTO	CTO	Acronimo per Chief technical officer (stratega e consulente tecnologico)
 Certificate Authority	Autorità di Certificazione (CA)	
 Chairperson	presidente	
 champion	paladino	il senso prevalente in inglese è quello di campione inteso come difensore di qualcosa o qualcuno (il campione che nei duelli rappresentava un signore).
+cipher	algoritmo crittografico	in un contesto analogico si può usare cifrario. encipher = cifrare, decipher = decifrare.
 Clear	cancella	non usare pulisci che mi sembra sia meno usato come traducente (almeno in ambito software)
 Comic Mischief	Comicità grossolana o allusiva	#descrittore
 Component Object model	modello a oggetti per componenti 	
@@ -30,6 +31,8 @@ DEJUS	DEJUS	Acronimo di Department of Justice, Rating, Titles and Qualification 
 DOM	DOM	Acronimo di Document Object Model (Modello a oggetti del documento) è la rappresentazione ad albero del documento nel browser
 Daily users	utenti giornalieri
 Data Retention Policy	Informativa sulla conservazione dei dati	
+decode	decodificare	Vedi encode.
+decrypt	decriptare	analogamente a encrypt si può usare decifrare per contesti dove ci si riferisca a cifrari analogici o per evitare ripetizioni
 Detail page	Pagina dell'estensione / del tema.	Viene usato anche scheda completa (nella vecchia traduzione)
 Developer Hub	Centro di sviluppo	
 Developer Preview Phone	prototipo per sviluppatori	
@@ -121,6 +124,7 @@ Subscribers	Iscritti
 TED talk	TED talk	conferenza TED (Technology Entertainment Design). Vedere: http://it.wikipedia.org/wiki/TED_%28conferenza%29
 TOS	Termini di servizio	Acronimo di Term of service
 Terms of Agreement	condizioni di contratto	
+top-notch	di alta qualità	
 Top Rated	Più votati	
 UI	interfaccia utente	Acronimo di User Interface (Interfaccia utente), si può anche utilizzare Interfaccia se il contesto lo permette
 UI	interfaccia utente	si può anche lasciare UI o usare interfaccia nel caso di problemi di lunghezza
@@ -211,7 +215,7 @@ building blocks	blocchi preconfezionati
 busy	impegnato, sovraccarico, complesso
 button	pulsante
 buyer	acquirente
-callback	callback	è una funzione che viene passata come argomento a un'altra funzione  (richiamo, riferimento), ma meglio non tradurre viene usato il termine inglese fra i programmatori.
+callback	callback	è una funzione che viene passata come argomento a un'altra funzione (richiamo, riferimento), ma meglio non tradurre viene usato il termine inglese fra i programmatori.
 cancel	annulla
 canvas	canvas	elemento canvas in HTML5 è un oggetto in cui si può disegnare, una lavagnetta, letteralmente tela
 caption	didascalia	legenda (solo di tabella)
@@ -307,8 +311,12 @@ dropdown menu/list	menu a tendina
 duplicate	duplica o duplicato	
 e-mail	email	sempre senza trattino
 early adopter	pioniere	
+early bird	mattiniero	 della prima ora
 easy	facile	anche semplice
-editor	editor, revisore	può essere riferito a un revisore. text editor invece si riferisce a un programma per gestire file di puro  testo, editor di testo
+encode	codificare	Non è usato nel senso di rendere inacessibili i dati (crittografia) ma solo per metterli in un altro formato. 
+encrypt	criptare	da preferire a crittare. Cifrare può essere usata come alternativa per evitare ripetizioni ma è più legato a cifrari analogici. Vedi discussione sul forum http://forum.mozillaitalia.org/index.php?board=8.0
+encryption	crittografia	
+editor	editor, revisore	può essere riferito a un revisore. text editor invece si riferisce a un programma per gestire file di puro testo, editor di testo
 elevator's pitch	illustra i punti di forza	breve discorso (il tempo si una salita in ascensore) per promuovere un proprio progetto
 email	email	
 emoticon(s)	emoticon	
@@ -318,7 +326,7 @@ enabled	attivato	mai abilitato
 encoding	codifica	Se riferito a caratteri codifica caratteri. 
 encoding	codifica/cifrare	a seconda del contesto
 engage	entrare in contatto	
-enjoy	apprezzi, ti piace	
+enjoy	apprezzi, ti piace. Anche sfruttare.
 enter	 inserire, immettere, invio	di solito riferito a un campo da compilare. Se riferito al tasto sulla tastiera usare Invio
 errno	numero errore	
 error	errore	di solito Si è verificato un errore (an error has occurred)
@@ -550,6 +558,7 @@ payment key	chiave pagamenti
 pending	sospeso
 pending app	app in sospeso
 permissions tokens	token per l'autorizzazione
+pet project	attività prediletta	attività preferita
 pick	scegliere
 picture	immagine
 pinpoint	individuare	determinare con precisione
@@ -586,6 +595,7 @@ provider	fornitore, provider	ad esempio di connessione Internet, di un servizio,
 pseudo selector	pseudoselettore	
 public page	pagina pubblica	
 published	pubblica. Stato di visibilità dell'app. Tutti possono visualizzarla e appare nelle ricerche e nelle pagine di presentazione (categorie, consigliate, ecc.)
+pull out all the stops	concentrare tutti gli sforzi	lavorare duramente a qualcosa
 purchase receipt	ricevuta di pagamento	
 purchase receipts	ricevuta di acquisto	
 push	trasmettere	nel contesto di Firefox OS Simulator usiamo trasmettere
