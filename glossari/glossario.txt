@@ -1,3 +1,7 @@
+
+
+
+
 &hellip;	in corso…	è l'entità HTML per i tre puntini di sospensione. Quando un'operazione è in esecuzione usare la forma Operazione in corso… seguita, anche se non ci sono nell'originale dai tre puntini di sospensione. Esempio "purchasing…" "Acquisto in corso…" Si può sia mettere il simbolo sia usare &hellip; 
 501(c)(3)	501(c)(3)	è un'espressione che fa riferimento all'articolo e alle sezioni in cui si definisce la ragione di Mozilla, in pratica un'organizzazione 501(c)(3) è un ente benefico esentata dalle imposte e che può ricevere donazioni.
 API	API	Acronimo di Application Programming Interface, Interfaccia per la programmazione di un'applicazione. Se si riferisce a un'API specifica lasciare in inglese, se si riferisce alle API di un software o sito web usare API di (software/servizio). I nomi delle API li lasciamo in inglese.
@@ -8,7 +12,6 @@ Application Secret	Application Secret
 Applications directory	cartella applicazioni	
 B2G	B2G	Acronimo di Boot To Gecko, nome in codice di Firefox OS
 Be careful	fai attenzione	
-brand new	completamente nuovo	(da non confondere con il brand che è il marchio)
 Breakdown	analisi	di solito riferito al codice sorgente
 Browse listing…	Ordina per	
 BrowserID	Mozilla Persona	
@@ -17,8 +20,6 @@ CSS	CSS	Acronimo di Cascading Style Sheet (Foglio di stile a cascata), si può a
 CTO	CTO	Acronimo per Chief technical officer (stratega e consulente tecnologico)
 Certificate Authority	Autorità di Certificazione (CA)	
 Chairperson	presidente	
-champion	paladino	il senso prevalente in inglese è quello di campione inteso come difensore di qualcosa o qualcuno (il campione che nei duelli rappresentava un signore).
-cipher	algoritmo crittografico	in un contesto analogico si può usare cifrario. encipher = cifrare, decipher = decifrare.
 Clear	cancella	non usare pulisci che mi sembra sia meno usato come traducente (almeno in ambito software)
 Comic Mischief	Comicità grossolana o allusiva	#descrittore
 Component Object model	modello a oggetti per componenti 	
@@ -31,16 +32,14 @@ DEJUS	DEJUS	Acronimo di Department of Justice, Rating, Titles and Qualification 
 DOM	DOM	Acronimo di Document Object Model (Modello a oggetti del documento) è la rappresentazione ad albero del documento nel browser
 Daily users	utenti giornalieri
 Data Retention Policy	Informativa sulla conservazione dei dati	
-decode	decodificare	Vedi encode.
-decrypt	decriptare	analogamente a encrypt si può usare decifrare per contesti dove ci si riferisca a cifrari analogici o per evitare ripetizioni
 Detail page	Pagina dell'estensione / del tema.	Viene usato anche scheda completa (nella vecchia traduzione)
 Developer Hub	Centro di sviluppo	
 Developer Preview Phone	prototipo per sviluppatori	
 Developer Tools dashboard	Dashboard Strumenti di sviluppo	
 Directory Tiles	Riquadri catalogo	
 Doc	Documentazione	
+EU	Comunità europea	se è chiaro nel contesto si può usare Europa quando ci sono limiti di spazio.
 Editor	editore	revisore	
-editorial review	revisione stilistica (su MDN)
 End user	utente finale	
 Enhanced Tiles	Riquadri dinamici	
 Except where otherwise	Eccetto dove diversamente (altrimenti) indicato	
@@ -94,7 +93,6 @@ Performance	prestazione/i
 Permalink	Permalink
 Permission	permesso, autorizzazione
 Postback URL	URL per il postback	È un indirizzo (indirizzo web) al quale notificare i riaccrediti
-private tab	scheda anonima	
 Proprietary software	software proprietario	software privato
 Publish	pubblicare	quando riferito a un'app o addon usare caricare, inviare.
 Purchase	comprare, acquistare.	Purchase for, acquista a.
@@ -124,7 +122,6 @@ Subscribers	Iscritti
 TED talk	TED talk	conferenza TED (Technology Entertainment Design). Vedere: http://it.wikipedia.org/wiki/TED_%28conferenza%29
 TOS	Termini di servizio	Acronimo di Term of service
 Terms of Agreement	condizioni di contratto	
-top-notch	di alta qualità	
 Top Rated	Più votati	
 UI	interfaccia utente	Acronimo di User Interface (Interfaccia utente), si può anche utilizzare Interfaccia se il contesto lo permette
 UI	interfaccia utente	si può anche lasciare UI o usare interfaccia nel caso di problemi di lunghezza
@@ -152,6 +149,7 @@ advance	avanzamento
 advanced	avanzate	
 advertiser	inserzionista pubblicitario	
 advocacy	attività legale	di solito nel caso di Mozilla si può rendere anche con difesa dei diritti online (vedere contesto)
+agitator	agitatorie	demagogo, sovversivo, sobillatore
 agreement	accordo	
 alert	avviso	
 alert popup	pop-up di avviso	
@@ -201,6 +199,7 @@ bottom menu	menu inferiore	o menu posizionato nella parte inferiore, se ci sono 
 box	campo	
 branch	filiale, ramo	filiale se riferito a una banca, ramo (di sviluppo) se riferito a software
 brand	marchio	
+brand new	completamente nuovo	(da non confondere con il brand che è il marchio)
 breakpoint	breakpoint	o punto di interruzione, però io lascerei in inglese (magari nella prima stringa in cui appare mettendo punto di interruzione fra parentesi)
 brief summary	breve riassunto	
 bring	trasferire	
@@ -227,6 +226,7 @@ catch	rilevare	catturare, afferrare
 category	categoria	
 caution	attenzione	
 certified app	app certificata	
+champion	paladino	il senso prevalente in inglese è quello di campione inteso come difensore di qualcosa o qualcuno (il campione che nei duelli rappresentava un signore).
 change	modifica	anche passare a (change to)
 changelog	changelog	se c'è spazio usare elenco delle modifiche apportate (changelog)
 changes	modifiche	
@@ -237,6 +237,7 @@ chargeback	riaccredito
 charged	addebitato	forma intransitiva (you are been charged) ti è stato addebitato
 check	verifica	controllo. Se è chiaro dal contesto ci si può riferire anche a un assegno.
 choose	scegliere	
+cipher	algoritmo crittografico	in un contesto analogico si può usare cifrario. encipher = cifrare, decipher = decifrare.
 clear	elimina	
 clear	pulisci	svuota
 click	fare clic	o (come sostantivo) clic
@@ -264,6 +265,7 @@ context menu	menu contestuale
 continue	continua, prosegui, vai	dipende dal contesto
 contributing	contribuire, donare	
 cookie	cookie	
+copyright	copyright	
 could not be	non è possibile	
 council	consiglio	
 country	stato	geografico. Se tradotto con Paese usare la maiuscola
@@ -280,7 +282,9 @@ customize	personalizzare
 cut	taglia	
 daily	per giorno giornalieri, giornalmente.
 dashboard	Pannello, Dashboard	pannello (anche se in alcuni casi è lasciato in inglese). Pannello statistiche (viene tradotto), Dashboard Strumenti di sviluppo e Dashboard localizzatori no.
+decode	decodificare	Vedi encode.
 decode/-ing	decifrare	
+decrypt	decriptare	analogamente a encrypt si può usare decifrare per contesti dove ci si riferisca a cifrari analogici o per evitare ripetizioni
 default	predefinito
 delete	elimina	
 delete	eliminare	rimuovere, cancellare. Di preferenza usare eliminare e rimuovere
@@ -313,18 +317,20 @@ e-mail	email	sempre senza trattino
 early adopter	pioniere	
 early bird	mattiniero	 della prima ora
 easy	facile	anche semplice
-encode	codificare	Non è usato nel senso di rendere inacessibili i dati (crittografia) ma solo per metterli in un altro formato. 
-encrypt	criptare	da preferire a crittare. Cifrare può essere usata come alternativa per evitare ripetizioni ma è più legato a cifrari analogici. Vedi discussione sul forum http://forum.mozillaitalia.org/index.php?board=8.0
-encryption	crittografia	
 editor	editor, revisore	può essere riferito a un revisore. text editor invece si riferisce a un programma per gestire file di puro testo, editor di testo
+editorial review	revisione stilistica (su MDN)
+education	didattica	educazione, insegnamento. Usare quello che si accorda meglio al contesto.
 elevator's pitch	illustra i punti di forza	breve discorso (il tempo si una salita in ascensore) per promuovere un proprio progetto
 email	email	
 emoticon(s)	emoticon	
 enable	attivare	
 enable/disable	attivare/disattivare	
 enabled	attivato	mai abilitato
+encode	codificare	Non è usato nel senso di rendere inacessibili i dati (crittografia) ma solo per metterli in un altro formato. 
 encoding	codifica	Se riferito a caratteri codifica caratteri. 
 encoding	codifica/cifrare	a seconda del contesto
+encrypt	criptare	da preferire a crittare. Cifrare può essere usata come alternativa per evitare ripetizioni ma è più legato a cifrari analogici. Vedi discussione sul forum http://forum.mozillaitalia.org/index.php?board=8.0
+encryption	crittografia	
 engage	entrare in contatto	
 enjoy	apprezzi, ti piace. Anche sfruttare.
 enter	 inserire, immettere, invio	di solito riferito a un campo da compilare. Se riferito al tasto sulla tastiera usare Invio
@@ -346,6 +352,8 @@ extended version	versione estesa
 extension	estensione	
 failed	fallita	non riuscito. Si può rendere anche con "something has failed" = "non è stato possibile effettuare qcs.".
 fair	chiaro	ma anche equo riferito a un criterio di valutazione.
+fair dealing	fair dealing	equo trattamento, analogo al fair use, è un istituto giuridico diffuso  nei paesi anglosassoni ed è un po' più restrittivo rispetto al fair dealing americano.
+fair use	fair use	equo utilizzo, è un istituto legislativo diffuso negli USa che consente un uso meno restrittivo dei contenuti soggetti a diritto d'autore
 fan base	zoccolo duro	
 favorite	preferito	
 feature	caratteristica, funzionalità, funzione
@@ -466,6 +474,7 @@ listen	ascoltare	anche rimanere in attesa di un evento
 listing	elenco, informazioni, dettagli, pagina	dipende dal contesto, è la parola che ha più significati di tutte le altre. 
 listing page	pagina informativa, scheda completa	è la pagina dove vengono indicate tutte le informazioni sul tema, di solito una cosa del tipo: http://addons.mozilla.org/slug_ome_addon
 load more	carica altro	
+lobbying	mettere pressione	
 local storage	local storage	
 location	indirizzo	o percorso, se riferito a file locali
 location bar	barra degli indirizzi	
@@ -494,8 +503,10 @@ marketplace	market, marketplace
 master password	password principale	
 matter	importante	adattarsi
 media	media	
+media outlet	organi di stampa	
 meet your needs	adattarlo alle proprie esigenze	
 member	membro	
+meme	meme	
 memory leak	perdite di memoria	
 menu	menu
 metadate	metadato
@@ -566,6 +577,7 @@ pitch	promuovi
 plain text	testo semplice
 platform	piattaforma, sistema operativo	se si parla di desktop platform anche sistema operativo, se è generico e intende sia mobile che desktop usare il generico piattaforma.
 play favorites	favorire [qualcosa]	
+pledge	patto	
 plugin	plugin
 policy	norma, politica, informativa, regola
 popular	popolare	ma anche diffuso
@@ -583,6 +595,7 @@ price tier	fascia di prezzo
 pricing matrix	schema dei prezzi
 primitive	di base
 privacy policy	informativa sulla privacy	
+private tab	scheda anonima	
 privileged app	app con privilegi	
 process	elaborare	
 processed	elaborato	usare anche la forma "elaborazione di (cosa)". Se riferito a programma in esecuzione, processo.
@@ -624,6 +637,7 @@ release	versione	versione stabile, versione ufficiale
 release notes	note di versione	
 released	distribuito, rilasciato	
 remember	memorizzare, ricordare	
+remix	remix	collage, quando è riferito esplicitamente alle immagini.
 remove	rimuovi/cancella	
 reply to	rispondi a	
 repo	repository	su Wikipedia viene suggerito di usare deposito o repositorio, però io non l'ho mai sentito, mettiamo repository al posto di repo
@@ -657,6 +671,7 @@ reviewed	revisionato, verificato, recensito	Nei commenti diventa recensito, se i
 reviewer	revisore	se ci si sta riferendo a un commento anche moderatore
 revoke	revocare	
 right click	[fare] clic con il tasto destro	
+rights holder	detentori di diritti d'autore	società o persone
 role	incarico	Ruoli in un team: proprietario, sviluppatore, osservatore, supporto
 roll over	al passaggio del mouse	
 root directory	directory principale	si può usare anche cartella, però di solito, visto che sono strumenti che si usano da shell dei comandi si usa directory (cartella è la directory nell'ambiente desktop), però non è fondamentale essere precisi, usare quello che suona meglio.
@@ -717,6 +732,7 @@ stop	interrompere	a volte fermare, arrestare
 storage	archiviazione	
 stretched	deformato	
 strict	rigoroso	
+strong encryption	crittografia sicura	anche avanzata
 subject 	oggetto	intestazione di messaggio
 subject to change without notice	soggetto a cambiamenti senza preavviso	
 submit	invia, carica.	Si invia un commento, una recensione, un feedback. Si carica un tema, un'app, un addon, ecc. Usato anche inserisci (submit app url). Se inteso nel senso di sottoporre per una revisione (review), usare sottoporre o presentare.
@@ -737,6 +753,7 @@ tap	tocco	usato anche come verbo, toccare
 target	destinazione	
 target	target	obiettivo. Ma anche di riferimento, pubblico, se usato come verbo rivolgere
 task	attività	
+technology	tecnologia	in alcuni contesti però si può usare nuove tecnologie se il soggetto sono le tecnologie di nuova generazione.
 technology stack	tecnologia	
 template	modello	
 temporarily	momentaneamente, al momento	
@@ -751,7 +768,6 @@ thoroughly	a fondo
 thread	discussione	se si riferisce a un sottoprocesso di un'applicazione lasciare in inglese
 tile	motivo di sfondo. Per i pannelli della pagina nuova scheda usare riquadro.
 tip/tooltip 	suggerimento	
-today widget	 schermata Oggi del centro notifiche, contenitore di widget nei sistemi iOS
 to check	selezionare	per una casella di spunta
 to choose	scegliere	per indicare l’utilizzo di una particolare voce di menu, o su pulsanti, titoli di finestre di dialogo per l’individuazione di un file/cartella/elemento utilizzare "selezionare"
 to forward	inoltrare	un messaggio
@@ -761,12 +777,14 @@ to quote	citare
 to select	selezionare	v. anche to choose
 to use 	utilizzare	da preferire a "usare"
 toast	toast	
+today widget	 schermata Oggi del centro notifiche, contenitore di widget nei sistemi iOS
 toggle menu	menu a comparsa	
 toggle switch	interruttore di stato	
 toolbar	barra degli strumenti	
 toolbar 	barra	degli strumenti, delle attività ecc.
 top	le migliori	
 top menu	menu superiore	
+top-notch	di alta qualità	
 total amount earned	valore guadagno totalizzato	
 tour	panoramica	
 track	tracciare	monitorare
@@ -814,6 +832,7 @@ warning	avviso
 watch	guardare	
 way	metodo, modo, maniera,	dipende dal contesto
 web font	web font sono i font scaricati direttamente dal web, lasciare in inglese
+web literacy	alfabetizzazione web	
 web site 	sito web	
 web standards	standard web, tecnologie standardizzate del Web	
 webinar	webinar	seminario online
