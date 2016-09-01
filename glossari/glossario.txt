@@ -2,6 +2,8 @@
 
 
 
+
+
 &hellip;	in corso…	è l'entità HTML per i tre puntini di sospensione. Quando un'operazione è in esecuzione usare la forma Operazione in corso… seguita, anche se non ci sono nell'originale dai tre puntini di sospensione. Esempio "purchasing…" "Acquisto in corso…" Si può sia mettere il simbolo sia usare &hellip; 
 501(c)(3)	501(c)(3)	è un'espressione che fa riferimento all'articolo e alle sezioni in cui si definisce la ragione di Mozilla, in pratica un'organizzazione 501(c)(3) è un ente benefico esentata dalle imposte e che può ricevere donazioni.
 API	API	Acronimo di Application Programming Interface, Interfaccia per la programmazione di un'applicazione. Se si riferisce a un'API specifica lasciare in inglese, se si riferisce alle API di un software o sito web usare API di (software/servizio). I nomi delle API li lasciamo in inglese.
@@ -57,7 +59,6 @@ Guest browsing navigazione in modalità ospite	è una caratteristica di Firefox 
 HTML	HTML	Acronimo di Hypertext Markup Language, anche nella versione HTML5
 Health	salute	ma anche benessere
 History	Cronologia	
-Homepage URL	URL sito web	
 Identity system	sistema di identificazione	
 Implement	implementare	
 Inbox	 In arrivo	
@@ -79,6 +80,8 @@ Manager	strumento di validazione	nel contesto di Firefox OS Simulator
 Manifest	manifesto	
 Manual Reviewer Points	Manuale per attribuire i punti ai revisori	
 Marketplace	Marketplace	letteralmente "piazza del mercato". Se si riferisce a Firefox Marketplace, maiuscolo e preceduto dall'articolo maschile.
+Mozilla Corporation	Mozilla Corporation	è la società commerciale controllata da Mozilla Foundation che si occupa, tra le altre cose, di sviluppare Firefox.
+Mozilla Foundation	Mozilla Foundation	è la fondazione Mozilla, meglio tenere in inglese perché rappresenta il nome proprio della fondazione.
 N/A	N.D.	non disponibile
 New tab page	pagina Nuova scheda	quando ci si riferisce alla pagina Nuova scheda di Firefox utilizzare la N maiuscola
 No Restart	riavvio non richiesto	
@@ -148,7 +151,7 @@ admin	amministratore
 advance	avanzamento	
 advanced	avanzate	
 advertiser	inserzionista pubblicitario	
-advocacy	attività legale	di solito nel caso di Mozilla si può rendere anche con difesa dei diritti online (vedere contesto)
+advocacy	patrocinio legale	di solito nel caso di Mozilla si può rendere anche con difesa dei diritti online (vedere contesto) Per il sito Mozilla Advocacy lasciare in inglese.
 agitator	agitatorie	demagogo, sovversivo, sobillatore
 agreement	accordo	
 alert	avviso	
@@ -207,7 +210,7 @@ browse	esplora
 browse	navigare	browse pages => pagine di navigazione
 browse page	pagina di navigazione	
 browser	browser	
-bug	bug	anche baco
+bug	bug	anche baco se si vuole mantenere l'analogia con l'insetto usata in alcuni contesti (vedi debug)
 bug tracking	bug tracking	sistema di gestione dei bug (dei problemi)
 build	creare	però se si riferisce al prodotto di una compilazione (da sorgente si ottiene qualcosa di eseguibile) si lascia in inglese. Nel caso si riferisca a al processo di pacchettizzazione di un'app pacchetto o se usato come verbo pacchettizzare o assemblare se con pacchettizzare si rischia una ripetizione
 building blocks	blocchi preconfezionati
@@ -282,6 +285,7 @@ customize	personalizzare
 cut	taglia	
 daily	per giorno giornalieri, giornalmente.
 dashboard	Pannello, Dashboard	pannello (anche se in alcuni casi è lasciato in inglese). Pannello statistiche (viene tradotto), Dashboard Strumenti di sviluppo e Dashboard localizzatori no.
+debug	debug	è il processo mediante il quale si trovano e si risolvono (patching) gli errori di programmazione. Chiamato così perché uno dei primi debug fu fatto per rimettere in funzione il computer Harvard Mark II andato in avaria (crash) a causa di una falena entrata nei circuiti.
 decode	decodificare	Vedi encode.
 decode/-ing	decifrare	
 decrypt	decriptare	analogamente a encrypt si può usare decifrare per contesti dove ci si riferisca a cifrari analogici o per evitare ripetizioni
@@ -304,6 +308,7 @@ directory	cartella	se è usata nel contesto di un'azione da riga di comando lasc
 disable	disattivare
 disabled	disattivato	mai disabilitato
 dissociate	rimuovi l'associazione	
+dive	immergersi	
 domain	dominio	
 download	download	oppure: scaricamento
 download	scarica, download	Dipende dal contesto, se usato come verbo diventa scarica, se usato come sostantivo (es. numero di download) rimane invariato.
@@ -322,6 +327,7 @@ editorial review	revisione stilistica (su MDN)
 education	didattica	educazione, insegnamento. Usare quello che si accorda meglio al contesto.
 elevator's pitch	illustra i punti di forza	breve discorso (il tempo si una salita in ascensore) per promuovere un proprio progetto
 email	email	
+emoji	emoji	sono simboli pittografici che fanno parte della codifica unicode dei caratteri. Accordare al femminile anche se a volte si usa al maschile. La parola ha origine giapponese e  significa scrittura + immagini + caratteri. Diversamente dalle emoticon che sono combinazioni di caratteri (a volte sostituite da un'immagine) le emoji sono caratteri veri e propri.
 emoticon(s)	emoticon	
 enable	attivare	
 enable/disable	attivare/disattivare	
@@ -352,7 +358,7 @@ extended version	versione estesa
 extension	estensione	
 failed	fallita	non riuscito. Si può rendere anche con "something has failed" = "non è stato possibile effettuare qcs.".
 fair	chiaro	ma anche equo riferito a un criterio di valutazione.
-fair dealing	fair dealing	equo trattamento, analogo al fair use, è un istituto giuridico diffuso  nei paesi anglosassoni ed è un po' più restrittivo rispetto al fair dealing americano.
+fair dealing	fair dealing	equo trattamento, analogo al fair use, è un istituto giuridico diffuso nei paesi anglosassoni ed è un po' più restrittivo rispetto al fair dealing americano.
 fair use	fair use	equo utilizzo, è un istituto legislativo diffuso negli USa che consente un uso meno restrittivo dei contenuti soggetti a diritto d'autore
 fan base	zoccolo duro	
 favorite	preferito	
@@ -362,6 +368,8 @@ featured	consigliato	disponibile
 featured	in evidenza, consigliato	Su AMO tradurre con consigliato, is featured -> ne fa parte (fa parte della categoria consigliati)
 feed RSS	feed RSS	
 feedback	commenti	suggerimenti, impressioni reazioni, opinioni a seconda del contesto. Anche commenti e suggerimenti.
+fellow	persona generica	di solito membro di un gruppo (usare membro nella maggior parte dei casi ma può indicare una persona generica, un tale)
+fellowship	fellowship	nel caso di Mozilla sono delle simil borse di studio che permettono a degli studenti o persone interessate di essere retribuiti per esperienze in vari ambiti lavorativi che riguardano il mondo informatico.
 filesystem	filesystem	
 fill	compilare	di solito un modulo o le informazioni su un'app o un addon
 find	scopri, trova	
@@ -396,6 +404,7 @@ gambling	Gioco d'azzardo
 game app	app gioco	
 generate	generare	
 geolocation	georilevazione	
+get foot	affermarsi	letteralmente trovare un appliglio. 
 get help	ottieni supporto	
 get involved	collabora, con qualcuno, di solito con noi	
 get it	Scarica(lo)	inteso come ottieni un qualcosa, nel caso di software scaricalo, installalo
@@ -414,7 +423,7 @@ great	grande	Anche perfettamente (works great offline, funziona perfettamente an
 grid	griglia	
 grid view	vista griglia	
 guidelines	linee guida	
-hack	hack	modificare, smanettare
+hack	hack	modificare, smanettare. Quando è inteso in senso negativo anche violare. Comunque elnelle traduzioni di Mozilla ha quasi sempre un significato positivo.
 ham	non è spam	
 hard disk	disco fisso	anche harddrive disco locale
 harm	danneggiare	
@@ -440,6 +449,7 @@ in-app	in-app
 in-app payment	pagamenti in-app	è la possibilità che hanno le app di poter vendere direttamente beni agli utenti, tipo vendere un MP3 ascoltato con un'app musicale.
 in-app product	prodotto in-app	
 inline scripting	script inline	o anche incorporato
+inspector	strumento di analisi	(del codice)
 into the hand	distribuire	letteralmente mettere nelle mani, distribuire (cosa) a (chi)
 invalid	non valido	
 invisible	non visibile	
@@ -480,7 +490,7 @@ location	indirizzo	o percorso, se riferito a file locali
 location bar	barra degli indirizzi	
 log	log, registro	di solito registro di un qualcosa, log file si può lasciare in inglese
 logged	identificato come	
-login	accesso	
+login	accesso	effettuare l'accesso
 login	login, effettuare il login, identificazione, eseguire il login, accedi	
 look	guardare, scoprire	
 look back	ripensare	guardare	letteralmente guardare indietro
@@ -575,10 +585,12 @@ picture	immagine
 pinpoint	individuare	determinare con precisione
 pitch	promuovi
 plain text	testo semplice
+plan	organizza	pianifica, programma
 platform	piattaforma, sistema operativo	se si parla di desktop platform anche sistema operativo, se è generico e intende sia mobile che desktop usare il generico piattaforma.
 play favorites	favorire [qualcosa]	
 pledge	patto	
 plugin	plugin
+podcast	podcast	usare abbonarsi al podcast
 policy	norma, politica, informativa, regola
 popular	popolare	ma anche diffuso
 popup list	menu a tendina
@@ -703,7 +715,8 @@ shareholder	azionista
 shield	scudo	
 ships with	fornito	intransitivo, viene rilasciato, equipaggiato, dispone
 show	mostrare, dimostrare, visualizzare	
-sign in	accedi	
+sign in	accedi	effettuare l'accesso
+sign up	registrati	effettuare la registrazione
 signed zip	zip firmato
 signing 	firmare	
 signon 	sottoscrizioni	
@@ -755,6 +768,7 @@ target	target	obiettivo. Ma anche di riferimento, pubblico, se usato come verbo 
 task	attività	
 technology	tecnologia	in alcuni contesti però si può usare nuove tecnologie se il soggetto sono le tecnologie di nuova generazione.
 technology stack	tecnologia	
+technologist	esperto di tecnologia	di nuove tecnologie
 template	modello	
 temporarily	momentaneamente, al momento	
 term	definizione	
@@ -767,6 +781,7 @@ third party	terze parti
 thoroughly	a fondo	
 thread	discussione	se si riferisce a un sottoprocesso di un'applicazione lasciare in inglese
 tile	motivo di sfondo. Per i pannelli della pagina nuova scheda usare riquadro.
+tinker	aggiustare	smanettare, sistemare
 tip/tooltip 	suggerimento	
 to check	selezionare	per una casella di spunta
 to choose	scegliere	per indicare l’utilizzo di una particolare voce di menu, o su pulsanti, titoli di finestre di dialogo per l’individuazione di un file/cartella/elemento utilizzare "selezionare"
@@ -800,6 +815,7 @@ tutorial	guida
 tweet	tweet	messaggio sul microblog di Twitter, se viene usato per richiedere una condivisione su Twitter (Share on Twitter, tweet this) usare passaparola (su twitter)
 typically	normalmente	in genere, di solito, tipicamente
 unable	non in grado	non sei capace, non sei in grado
+unable to	impossibile	contattare il server, impossibile effettuare l'accesso, ecc.
 unavailable	non disponibile	
 undone	annullato	
 unexpected	inatteso	
@@ -810,6 +826,8 @@ unpanel	non conferenza	http://it.wikipedia.org/wiki/Non_conferenza
 unsubscribe	rimuovere iscrizione	girare sempre sostantivando (l'iscrizione è stata rimossa)
 untapped	inesplorato	
 until	finché	
+update	aggiornamento	
+upgrade	aggiornamento	rispetto a update indica anche un miglioramento e non solo una nuova versione, però in italiano non c'è un analogo.
 upload	caricare	
 upsell	promozione	
 usability	usabilità	
@@ -840,6 +858,7 @@ weekly	per settimana, settimanali
 welcome	benvenuto	quando usato come verbo accogliere	
 western 	occidentale	
 what	che cosa, qual è	usando che cosa ricordarsi del che, se reso come qual è non mettere l'apostrofo (si può anche scrivere qualè a discrezione, su AMO abbiamo sempre messo lo spazio)
+white paper	libro bianco	Con il termine libro bianco (dall'inglese "White Paper") si indica generalmente un documento ufficiale pubblicato da un governo o da un'organizzazione internazionale al fine di rendere ufficiale un rapporto Nel marketing la parola può indicare anche una pubblicazione scritta da un professionista esperto di una materia che offre informazioni di qualità e di interesse ad un pubblico selezionato di utenti.
 whiteboard	bacheca	su AMO è il pannello dove vengono visualizzate informazioni rilevanti per gli editor del Marketplace
 widget	widget	
 with	con	ma anche grazie a (cosa), assieme
