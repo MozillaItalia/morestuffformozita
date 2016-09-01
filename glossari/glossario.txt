@@ -595,7 +595,7 @@ popup list	menu a tendina
 popup menu	menu contestuale
 post	articolo	se riferito a una pubblicazione su un blog, se in un forum lasciarlo in inglese. Come verbo inviare
 pre-approved payment	pagamento preapprovato
-pre-release	versione non definitiva	
+pre-release	versione provvisoria	
 preapproval	preapprovazione	(dei pagamenti)
 preliminarily reviewed	sottoposto a revisione preliminare
 press center	sala stampa
