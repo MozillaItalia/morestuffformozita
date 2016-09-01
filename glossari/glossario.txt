@@ -1,9 +1,3 @@
-
-
-
-
-
-
 &hellip;	in corso…	è l'entità HTML per i tre puntini di sospensione. Quando un'operazione è in esecuzione usare la forma Operazione in corso… seguita, anche se non ci sono nell'originale dai tre puntini di sospensione. Esempio "purchasing…" "Acquisto in corso…" Si può sia mettere il simbolo sia usare &hellip; 
 501(c)(3)	501(c)(3)	è un'espressione che fa riferimento all'articolo e alle sezioni in cui si definisce la ragione di Mozilla, in pratica un'organizzazione 501(c)(3) è un ente benefico esentata dalle imposte e che può ricevere donazioni.
 API	API	Acronimo di Application Programming Interface, Interfaccia per la programmazione di un'applicazione. Se si riferisce a un'API specifica lasciare in inglese, se si riferisce alle API di un software o sito web usare API di (software/servizio). I nomi delle API li lasciamo in inglese.
@@ -327,7 +321,7 @@ editorial review	revisione stilistica (su MDN)
 education	didattica	educazione, insegnamento. Usare quello che si accorda meglio al contesto.
 elevator's pitch	illustra i punti di forza	breve discorso (il tempo si una salita in ascensore) per promuovere un proprio progetto
 email	email	
-emoji	emoji	sono simboli pittografici che fanno parte della codifica unicode dei caratteri. Accordare al femminile anche se a volte si usa al maschile. La parola ha origine giapponese e  significa scrittura + immagini + caratteri. Diversamente dalle emoticon che sono combinazioni di caratteri (a volte sostituite da un'immagine) le emoji sono caratteri veri e propri.
+emoji	emoji	sono simboli pittografici che fanno parte della codifica unicode dei caratteri. Accordare al femminile anche se a volte si usa al maschile. La parola ha origine giapponese e significa scrittura + immagini + caratteri. Diversamente dalle emoticon che sono combinazioni di caratteri (a volte sostituite da un'immagine) le emoji sono caratteri veri e propri.
 emoticon(s)	emoticon	
 enable	attivare	
 enable/disable	attivare/disattivare	
@@ -396,6 +390,7 @@ frame	riquadro
 framework	framework	
 free	libero, gratuito, gratis	di solito nel contesto di AMO è gratis, gratuito. Anche reso come indipendente, dipende dal contesto.
 free browser	browser libero e gratuito	
+freeze	blocco	blocco del processo. È quando il programma in esecuzione si pianta e bisogna chiuderlo forzatamente.
 frontend	frontend	lato utente, se non si riesce a girare la frase e spiegare il concetto altrimenti lasciare in inglese
 full control	pieno controllo	
 gain	acquisire	acquistare popolarità reso con diventare popolare, acquistare focus, in generale può anche significare ottenere, guadagnare
@@ -472,6 +467,7 @@ layout	aspetto
 leaderboard	classifica	
 leak	perdita	
 learn more	ulteriori informazioni, maggiori informazioni, scopri	ulteriori informazioni come traducente principale, ma si può adeguare alla particolare stringa
+legacy	utilizza tecnologia obsoleta	la traduzione dipende dal contesto, con il termine legacy vengono indicate dei software/applicazioni che sfruttano una tecnologia non più supportata o deprecata (esempio con WebExtension le estensioni basate su XUL vengono deprecate).
 less	meno	
 library	libreria	di solito riferito ai framework JS come jQuery e simili
 licensed under * license	concesso con licenza *	
@@ -597,6 +593,7 @@ popup list	menu a tendina
 popup menu	menu contestuale
 post	articolo	se riferito a una pubblicazione su un blog, se in un forum lasciarlo in inglese. Come verbo inviare
 pre-approved payment	pagamento preapprovato
+pre-release	versione non definitiva	
 preapproval	preapprovazione	(dei pagamenti)
 preliminarily reviewed	sottoposto a revisione preliminare
 press center	sala stampa
@@ -618,6 +615,7 @@ protect	proteggere	difendere o salvaguardare, dipende dal contesto: si salvaguar
 provide	garantire, fornire, offrire	
 provider	fornitore, provider	ad esempio di connessione Internet, di un servizio, ad esempio di posta elettronica (lasciare "provider email" in questo caso). Per i provider di ricerca, vedi anche search provider (motori di ricerca o provider di ricerca)
 pseudo selector	pseudoselettore	
+public key pinning	pinning delle chiavi pubbliche	viene indicato anche dall'acronimo HPKP (HTTP Public Key Pinning). È un meccanismo di controllo (recente) mediante cui è possibile, da parte di un sito all'atto del first connect, indicare un insieme di hash delle autorità che hanno rilasciato il certificato pubblico. È così possibile evitare che una CA supportata dal browser ma non dal sito rilasci un certificato valido per il sito (il caso classico è una CA poco sicura o affiliata a stati canaglia che rilasciano un certificato fasulo, vedi DigiNotar o CA tunisina).
 public page	pagina pubblica	
 published	pubblica. Stato di visibilità dell'app. Tutti possono visualizzarla e appare nelle ricerche e nelle pagine di presentazione (categorie, consigliate, ecc.)
 pull out all the stops	concentrare tutti gli sforzi	lavorare duramente a qualcosa
@@ -766,9 +764,9 @@ tap	tocco	usato anche come verbo, toccare
 target	destinazione	
 target	target	obiettivo. Ma anche di riferimento, pubblico, se usato come verbo rivolgere
 task	attività	
+technologist	esperto di tecnologia	di nuove tecnologie
 technology	tecnologia	in alcuni contesti però si può usare nuove tecnologie se il soggetto sono le tecnologie di nuova generazione.
 technology stack	tecnologia	
-technologist	esperto di tecnologia	di nuove tecnologie
 template	modello	
 temporarily	momentaneamente, al momento	
 term	definizione	
