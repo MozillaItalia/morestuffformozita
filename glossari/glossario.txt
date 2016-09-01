@@ -192,10 +192,11 @@ believe	credere	anche pensare
 below	seguente	di seguito, qui sotto, sottostante
 billing	fatturazione	
 billing address	indirizzo per la fatturazione	
-billion	miliardo	Diversamente dall'italiano che usa la scala lunga, l'inglese utilizza la scala corta, questo significa che a partire dal miliardo le parole usate in inglese diventano dei falsi amici. (billion = miliardo, trillion = bilione = 10^12). https://it.wikipedia.org/wiki/Scala_lunga_e_scala_corta
+billion	miliardo	Diversamente dall'italiano che usa la scala lunga, l'inglese (americano) utilizza la scala corta, questo significa che a partire dal miliardo le parole usate in inglese diventano dei falsi amici. (billion = miliardo, trillion = bilione = mille miliardi = 10^12). In italiano il prefisso -ardo viene usato per indicare mille volte la cifra con il medesimo prefisso terminante in -one. Ad esempio 1 miliardo = 1000 milioni, 1 biliardo = 1000 bilioni = 10^15, 1 triliardo = 1000 trilioni = 10^21. Quadrillion = 10^15 = 1000 bilioni o 1 biliardo.  https://it.wikipedia.org/wiki/Scala_lunga_e_scala_corta
 binary component	componente compilato	Binary, letteralmente binario, ma se riferito a un software è compilato.
 blank	vuoto	
 blocklisted	aggiunto alla lista di (cosa) bloccato, bloccato	aggiunta alla lista delle app/addon bloccati, meglio usare una forma diretta, app/addon bloccato.
+bold	grassetto	Se è usato come aggettivo audace, temerario e sinonimi.
 boot	boot	se viene usato come verbo avviare
 bottom menu	menu inferiore	o menu posizionato nella parte inferiore, se ci sono problemi di spazio va bene menu inferiore
 box	campo	
@@ -252,7 +253,7 @@ color code	codice colore
 comes with	equipaggiato
 coming soon	arriveranno presto	arrivo imminente. Ma è meglio sostituire arrivare con un verbo più specifico relativamente al contesto.
 command line	riga dei comandi	
-commit	dedicarsi	in modo intransitivo, dedicarsi, es: Mozilla is committed. Anche impegnarsi.
+commit	dedicarsi	in modo intransitivo, dedicarsi, es: Mozilla is committed. Anche impegnarsi. Se si intende l'operazione mediante la quale si rendono effettive le modifiche effettuate in locale (o su uno strumento online terzo, come Pontoon) usare “effettuare il commit”, confermare o inviare a seconda del contesto.
 common task	operazioni comuni	anche operazioni di ogni giorno
 company	società	
 compare	confronta	
@@ -391,6 +392,7 @@ footer image	immagine di pié di pagina	Nei temi di sfondo è l'immagine utilizz
 for the time being	nel frattempo	
 forget	dimenticare	
 form	modulo	
+fragile	delicato	fragile
 frame	riquadro	
 framework	framework	
 free	libero, gratuito, gratis	di solito nel contesto di AMO è gratis, gratuito. Anche reso come indipendente, dipende dal contesto.
@@ -412,8 +414,10 @@ get it	Scarica(lo)	inteso come ottieni un qualcosa, nel caso di software scarica
 get started	per iniziare	
 getting started	per iniziare	
 git	git	come per volo in minuscolo
+glitch	problema tecnico	bug. Il termine glitch è usato in elettrotecnica per indicare un picco breve ed improvviso (non periodico) in una forma d'onda, causato da un errore non prevedibile. Per estensione è usato per indicare un breve difetto del sistema in vari campi di applicazione dell'elettronica.
 global	globale, mondiale	
 goal statement	dichiarazione d'intento	
+googol	googol	È un numero di 101 cifre (uno come prima cifra e 100 zeri). 
 gore	violenza	blood and gore -> sangue e mutilazione
 grant	consenti	
 granted	concesso	
@@ -634,6 +638,7 @@ purchase receipt	ricevuta di pagamento
 purchase receipts	ricevuta di acquisto	
 push	trasmettere	nel contesto di Firefox OS Simulator usiamo trasmettere
 put	mettere	far giungere
+quadrillion	mille bilioni	oppure 1 biliardo, oppure 1 milione di miliardi. Vedi la voce billion per la spiegazione.
 qualification rating	visto censura
 queue	coda	di solito quella di revisione, uno carica un addon e viene aggiunto alla coda di revisione dove potrà essere revisionato/esaminato/verificato dai revisori di AMO.
 quick start	guida introduttiva	ma può essere anche inteso come avvio rapido, se riferito a documentazione o tutorial "guida introduttiva"
@@ -819,6 +824,7 @@ training	formazione	anche addestramento, allenamento, però nel contesto Mozilla
 transaction	transazione	
 transparent	trasparente	però in inglese viene quasi sempre usato in modo figurato, in italiano si rende meglio con chiaro, comprensibile o con un giro di parole.
 trash/trash can 	cestino	
+trillion	bilione	O anche mille miliardi. Vedi la voce billion per la spiegazione.
 truncated message	messaggio troncato	
 trust 	attendibilità	
 trusted	affidabile	
