@@ -53,6 +53,7 @@ Guest browsing navigazione in modalità ospite	è una caratteristica di Firefox 
 HTML	HTML	Acronimo di Hypertext Markup Language, anche nella versione HTML5
 Health	salute	ma anche benessere
 History	Cronologia	
+ICYMI	In Case You Missed It	acronimo.  In caso non ti fosse giunta la voce, nel caso in cui il contesto consenta frasi lunghe a piacere. Per i tweet #sapevatelo.
 Identity system	sistema di identificazione	
 Implement	implementare	
 Inbox	 In arrivo	
@@ -512,7 +513,7 @@ media	media
 media outlet	organi di stampa	
 meet your needs	adattarlo alle proprie esigenze	
 member	membro	
-meme	meme	
+meme	meme	usare meme anche al plurale
 memory leak	perdite di memoria	
 menu	menu
 metadate	metadato
