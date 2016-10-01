@@ -40,6 +40,7 @@ function nicemacversion($v){
 			case $v2==="10.9":$v="Mavericks";break;
 			case $v2==="10.10":$v="Yosemite";break;
 			case $v2==="10.11":$v="El Capitan";break;
+			case $v2==="10.12":$v="Sierra";break;
 			case $v2==="10.12":$v="Fuji";break;
 			default: $v=false;break;
 	}

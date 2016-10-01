@@ -414,19 +414,20 @@ grant	consenti
 granted	concesso	
 grants	sovvenzioni	sovvenzioni pubbliche o da fondazioni no profit
 graphics	elementi grafici	
-grassroots	movimento popolare	opinione pubblica, movimento di persone che nasce in modo spontaneo. Base, società civile.
+grassroots	movimento popolare	opinione pubblica, movimento di persone che nasce in modo spontaneo. Base, società civile. Gente comune. Lavorare  sul campo. (nel senso di operare con la base)
 great	grande	Anche perfettamente (works great offline, funziona perfettamente anche in modalità non in linea)
 grid	griglia	
 grid view	vista griglia	
 guidelines	linee guida	
-hack	hack	modificare, smanettare. Quando è inteso in senso negativo anche violare. Comunque elnelle traduzioni di Mozilla ha quasi sempre un significato positivo.
+hack	hack	modificare (il codice), trovare una soluzione creativa, magari in modo non proprio consono. Quando è inteso in senso negativo anche violare. Comunque nelle traduzioni di Mozilla ha quasi sempre un significato positivo. Non esiste un verbo diretto, vedere il contesto per  Il verbo inglese hack può avere parecchie accezioni, ma quella primaria è fare a pezzi, da cui derivano vari significati figurati come ad es. mutilare, distruggere, manomettere, modificare rozzamente (senza riguardi e/o facendo danni o abusivamente) ecc. Vedi anche http://blog.terminologiaetc.it/2013/01/28/dante-database-lessicale-lingua-inglese/
 ham	non è spam	
+hands-on	partecipativo	usato come aggettivo, significa partecipativo, effettivo.
 hard disk	disco fisso	anche harddrive disco locale
 harm	danneggiare	
 header	intestazione	
 header	testata	intestazione, header. Se riferito al layout di pagina utilizzare testata, se riferito agli http-header lasciare in inglese o usare intestazione
 header image	immagine di testata	Nei temi di sfondo è l'immagine utilizzata nella parte superiore della finestra
-healty	sano, salubre	
+healty	sano, vitale, prospero, florido, salubre	
 helper application	applicazione esterna	
 hidden menu	menu nascosto	
 history	cronologia		
@@ -722,6 +723,7 @@ signon 	sottoscrizioni
 simplest way	il modo più semplice	
 size 	dimensione	
 skeleton	struttura	ma anche più letteralmente scheletro
+skill	abilità	competenza
 slide box	riquadro a scorrimento	
 slider	dispositivo di scorrimento	
 slow down	rallentare	
