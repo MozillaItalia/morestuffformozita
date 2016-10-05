@@ -1,28 +1,28 @@
 La legge europea sul diritto d’autore o copyright è da tempo sotto l’occhio del ciclone a causa dei suoi molti controsensi e parti mancanti.
 
-Prima di parlarne però prima è bene ricordare la differenza tra la licenza copyright e copyleft in modo da capire meglio il problema e le sue conseguenze nella vita di tutti i nostri giorni.
+Prima di parlarne però è bene ricordare la differenza tra la licenza copyright e copyleft in modo da capire meglio il problema e le sue conseguenze nella vita di tutti i nostri giorni.
 
-Con copyright ci si riferisce alla versione americana o per essere più precisi nella versione non italiana. Con versione italiana mi riferisco al sottostare della legge sul diritto d’autore in Italia visto che si tratta del nostro caso.
+Con copyright ci si riferisce alla versione americana o per essere più precisi nella versione non italiana. Con versione italiana ci riferiamo al sottostare della legge sul diritto d’autore, in Italia visto che si tratta del nostro caso.
 
-Lo scopo della legge sul diritto d’autore é di tutelare la proprietà e i derivati sull’attività intellettuale tramite il riconoscimenti di diversi diritti e tutele con la remunerazione per un certo periodo di tempo.
+Lo scopo della legge sul diritto d’autore è di tutelare la proprietà e i derivati sull’attività intellettuale tramite il riconoscimenti di diversi diritti e tutele con la remunerazione per un certo periodo di tempo.
 
-La licenza copyleft invece come si può intuire dal nome significa l’opposto. Nato nel mondo informatico per l’open source permette la distribuzione e modifica sotto certe condizioni senza il riconoscimento di una remunerazione.
+La licenza copyleft invece, come si può intuire dal nome significa l’opposto. Nato nel mondo informatico per l’open source, permette la distribuzione e modifica sotto certe condizioni senza il riconoscimento di una remunerazione.
 La più semplice e diffusa delle condizioni è il menzionare l’autore dell’opera originale e il rilascio della nuova opera sotto la licenza dell'opera originale in modo che il progetto possa continuare a vivere secondo lo stesso spirito.
 
-Dopo questa premessa abbiamo un'idea chiara di cosa significa proteggere i diritti su un'opera ma cosa implica nella vita di tutti i giorni come cittadini europei?
+Dopo questa premessa abbiamo un'idea chiara di che cosa significa proteggere i diritti su un'opera, ma che cosa implica nella vita di tutti i giorni come cittadini europei?
 
 https://www.youtube.com/watch?v=Obv6M_c8XVs
 
-Implica che la legge dell’unione europea attuale sul copyright è del 2001 e che non prevedeva l’internet e i social network di oggi.
+Implica che la legge dell’Unione Europea attuale sul copyright è del 2001 e quindi non prevedeva l’Internet e i social network di oggi.
 
 Quindi oggi è molto facile cadere nell’infrazione senza rendersene conto e per diversi motivi a seconda del tipo di opera.
 
-Incominciamo con la Libertà di Panorama che dal nome può sembrare un inno musicale ma che in realtà è qualcosa di molto diverso.
+Incominciamo con la libertà di panorama che dal nome può sembrare un inno musicale ma che in realtà è qualcosa di molto diverso.
 
-I palazzi come altri elementi architettonici essendo opere dell’ingegno sono sotto copyright e quindi ricadono sotto la tutela che ne impedisce ad esempio la loro riproduzione ad esempio con foto. Si non sto scherzando non potete fare una foto ai palazzi e condividerla sui social perché é pirateria. Essendo una foto una copia é come quando si copia un film e lo si fa girare sulla rete. 
+I palazzi, così come altri elementi architettonici, essendo opere dell’ingegno sono sotto copyright e quindi ricadono sotto la tutela che ne impedisce la loro riproduzione ad esempio con fotografie. Sì, non sto scherzando non potete fare una foto ai palazzi e condividerla sui social network perché è pirateria. Essendo la fotografia una copia, è come quando si copia un film e lo si fa girare sulla Rete. 
 
-La [libertà di panorama](https://it.wikipedia.org/wiki/Libert%C3%A0_di_panorama) significa libertà nel fare foto, condividerle e rielaborarle senza gli oneri di riproduzione perché abbiamo fatto un selfie davanti al Colosseo.
-Nel caso del colosseo non è sotto copyright e quindi siamo al sicuro ma non è lo stesso per l’impianto luminario della Torre Effeil.
+La [libertà di panorama](https://it.wikipedia.org/wiki/Libert%C3%A0_di_panorama) significa libertà nel fare foto, condividerle e rielaborarle senza gli oneri di riproduzione, solo perché abbiamo fatto un *selfie* davanti al Colosseo.
+Nel caso del Colosseo, esso non è sotto copyright e quindi siamo al sicuro ma non è lo stesso per l’impianto di illuminazione della Torre Effeil.
 L’autore della torre è morto da oltre settant’anni e il copyright è scaduto quindi possiamo scattare le foto e pubblicarle su internet ma non quando scende la notte e è tutto più romantico. Perché le luci sono sotto copyright!
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/No-LdP.svg/500px-No-LdP.svg.png)
