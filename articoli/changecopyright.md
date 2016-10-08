@@ -23,36 +23,36 @@ I palazzi, così come altri elementi architettonici, essendo opere dell’ingegn
 
 La [libertà di panorama](https://it.wikipedia.org/wiki/Libert%C3%A0_di_panorama) significa libertà nel fare foto, condividerle e rielaborarle senza gli oneri di riproduzione, solo perché abbiamo fatto un *selfie* davanti al Colosseo.
 Nel caso del Colosseo, esso non è sotto copyright e quindi siamo al sicuro ma non è lo stesso per l’impianto di illuminazione della Torre Effeil.
-L’autore della torre è morto da oltre settant’anni e il copyright è scaduto quindi possiamo scattare le foto e pubblicarle su internet ma non quando scende la notte e è tutto più romantico. Perché le luci sono sotto copyright!
+L’autore della Torre Effeil è deceduto da oltre settant’anni e il copyright è scaduto, quindi possiamo scattare le foto e pubblicarle su Internet ma non quando scende la notte ed è tutto più romantico. Perché le luci sono sotto copyright!
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/No-LdP.svg/500px-No-LdP.svg.png)
 
-Da questa immagine abbiamo qualche dettaglio in più ovvero che le opere artistiche come monumenti o palazzi dal 1946 in poi sono sotto tutela. Quindi molti dei palazzi anteguerra o le ricostruzioni rientrano in questa categoria.
+Da questa immagine abbiamo qualche dettaglio in più ovvero che le opere artistiche, come monumenti o palazzi, dal 1946 in poi sono sotto tutela. Quindi molti dei palazzi d'anteguerra o le ricostruzioni rientrano in questa categoria.
 
-Anche un'opera d’arte come il classico dipinto del paesaggio essendo un'opera derivata ricade sotto la legge e quindi non si possono nemmeno fare riproduzioni.
+Anche un'opera d’arte come il classico dipinto del paesaggio, essendo un'opera derivata, ricade sotto la legge e quindi non si possono nemmeno effettuare riproduzioni.
 
-Dire limitativa è poco ma abbiamo appena cominciato a vedere la punta dell’iceberg della situazione.
+Dire limitativa è poco, ma abbiamo appena cominciato a vedere la punta dell’iceberg della situazione.
 
-Per questo motivo Wikimedia Italia [lo scorso anno](https://it.wikipedia.org/wiki/Aiuto:Copyright_immagini/Libert%C3%A0_di_panorama) ha avviato una campagna per la Libertá di Panorama dopo aver ricevuto una [diffida](https://it.wikipedia.org/wiki/Utente:Alcuni_Wikipediani/Lettera_aperta_sulle_leggi_sul_copyright) da parte degli uffizi di Firenze per l’uso di fotografie del loro materiale.
-Lo scorso anno quindi a [livello globale](https://meta.wikimedia.org/wiki/Libert%C3%A0_di_Panorama_in_Europa_nel_2015) ha realizzato una campagna per sensibilizzare riguardo i problemi di [copyright che l’Enciclopedia Libera](https://it.wikipedia.org/wiki/Wikipedia:Copyright_immagini) incontra ogni giorno nella sua opera di divulgazione.
-Non dimentichiamo la [Interrogazione parlamentare che hanno fatto nel 2008](https://it.wikisource.org/wiki/Interrogazione_parlamentare_-_Diritto_al_panorama) ma nemmeno la campagna [Wiki Love Monuments](http://wikilovesmonuments.wikimedia.it/) che serve ad identificare elementi con problemi di copyright oltre che a raccogliere foto fantastiche.
+Per questo motivo Wikimedia Italia [lo scorso anno](https://it.wikipedia.org/wiki/Aiuto:Copyright_immagini/Libert%C3%A0_di_panorama) ha avviato una campagna per la Libertá di Panorama dopo aver ricevuto una [diffida](https://it.wikipedia.org/wiki/Utente:Alcuni_Wikipediani/Lettera_aperta_sulle_leggi_sul_copyright) da parte degli Uffizi di Firenze per l’uso di fotografie del loro materiale.
+Lo scorso anno quindi Wikipedia a [livello globale](https://meta.wikimedia.org/wiki/Libert%C3%A0_di_Panorama_in_Europa_nel_2015) ha realizzato una campagna per sensibilizzare riguardo i problemi di [copyright che l’Enciclopedia Libera](https://it.wikipedia.org/wiki/Wikipedia:Copyright_immagini) incontra ogni giorno nella sua opera di divulgazione.
+Non dimentichiamo la loro [interrogazione parlamentare che hanno fatto nel 2008](https://it.wikisource.org/wiki/Interrogazione_parlamentare_-_Diritto_al_panorama) ma nemmeno la campagna [Wiki Love Monuments](http://wikilovesmonuments.wikimedia.it/) che serve a identificare elementi con problemi di copyright oltre che a raccogliere fantastiche fotografie.
 
-Passando invece alla grafica potremmo parlare dei meme.
-Queste immagini che oramai sono il tormentone di internet spesso contengono un fotogramma di un film o serie tv che è sotto copyright. Quindi modificarle aggiungendo un testo e condividerle per la rete è infrangere la legge.
+Passando invece alla grafica, potremmo parlare dei meme.
+Queste immagini, che oramai sono il tormentone di Internet, spesso contengono un fotogramma di un film o di una serie tv che è sotto copyright. Quindi modificarle aggiungendo un testo e condividerle per la rete è infrangere la legge.
 
 https://www.youtube.com/watch?v=OG10a1F9gU0
 
-Con questi esempi sicuramente ognuna delle persone che sta twittando in questo momento o condividendo una foto su facebook è un criminale per la legge europea e italiana.
+Con questi esempi sicuramente ognuna delle persone che sta "twittando" in questo momento o condividendo una foto su Facebook è un criminale per la legge europea e italiana.
 
 Urge allora una riforma per il copyright in modo che tutti noi possiamo essere a norma.
 
 Mozilla ha avviato una campagna di sensibilizzazione per raccogliere persone interessate  riguardo la situazione e richiede solamente il compilare un form https://www.changecopyright.org/.
 
-Perchè Mozilla ha realizzato questa campagna?
+Perché Mozilla ha realizzato questa campagna?
 Ecco il video!
 https://www.youtube.com/watch?v=QjICgr3sz4Y
 
-Per chi vuole approfondire l’argomento stiamo organizzando in Italia come community Mozilla Italia diversi eventi di sensibilizzazione sull’argomento anche nei Linux Day.
+Per chi vuole approfondire l’argomento stiamo organizzando in Italia, in qualità di community Mozilla Italia, diversi eventi di sensibilizzazione sull’argomento anche nei Linux Day.
 
 Materiale in inglese di approfondimento europeo:
 * http://copyrightexceptions.eu/#Art.%205.1 - Le eccezioni della legge sul copyright nei vari paesi europei.
@@ -61,16 +61,16 @@ Materiale in inglese di approfondimento europeo:
 * http://copywrongs.eu/it/ 
 * http://www.fixcopyright.eu/ 
 
-Materiale realizzato da Mozilla
+Materiale realizzato da Mozilla:
 * http://changecopyright.org/ La campagna
 
-Video Promozionali di Mozilla
+Video promozionali di Mozilla:
 * https://www.youtube.com/watch?v=QjICgr3sz4Y 
 * * https://www.youtube.com/watch?v=OG10a1F9gU0 
 * https://www.youtube.com/watch?v=Obv6M_c8XVs 
 * https://postcrimes.org/#!/ Campagna interattiva di Mozilla
 
-La situazione di Wikipedia italia:
+La situazione di Wikipedia Italia:
 * https://it.wikipedia.org/wiki/Utente:Alcuni_Wikipediani/Lettera_aperta_sulle_leggi_sul_copyright 
 * https://it.wikipedia.org/wiki/Aiuto:Copyright_immagini/Libert%C3%A0_di_panorama 
 * https://meta.wikimedia.org/wiki/Libert%C3%A0_di_Panorama_in_Europa_nel_2015 
