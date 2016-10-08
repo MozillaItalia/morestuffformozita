@@ -6,7 +6,7 @@ Con copyright ci si riferisce alla versione americana o per essere più precisi 
 
 Lo scopo della legge sul diritto d’autore è di tutelare la proprietà e i derivati sull’attività intellettuale tramite il riconoscimenti di diversi diritti e tutele con la remunerazione per un certo periodo di tempo.
 
-La licenza copyleft invece, come si può intuire dal nome significa l’opposto. Nato nel mondo informatico per l’open source, permette la distribuzione e modifica sotto certe condizioni senza il riconoscimento di una remunerazione.
+La licenza copyleft significa l’opposto. Nato nel mondo informatico per l’open source, permette la distribuzione e modifica sotto certe condizioni senza il riconoscimento di una remunerazione.
 La più semplice e diffusa delle condizioni è il menzionare l’autore dell’opera originale e il rilascio della nuova opera sotto la licenza dell'opera originale in modo che il progetto possa continuare a vivere secondo lo stesso spirito.
 
 Dopo questa premessa abbiamo un'idea chiara di che cosa significa proteggere i diritti su un'opera, ma che cosa implica nella vita di tutti i giorni come cittadini europei?
