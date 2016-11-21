@@ -48,12 +48,13 @@ Firefox OS Simulator	Firefox OS Simulator
 Firefox healt report	valutazione integrità di Firefox
 For more information	Per ulteriori informazioni	
 General Counsel	rappresentante /consulente legale	
+get	ottenere	La traduzione di get dipende dal contesto, esempio: un software si scarica o si installa.
 Get Involved	collabora con (noi)	
 Guest browsing navigazione in modalità ospite	è una caratteristica di Firefox per Android che consente di condividere il browser con amici senza condividere i dati di navigazione.
 HTML	HTML	Acronimo di Hypertext Markup Language, anche nella versione HTML5
 Health	salute	ma anche benessere
 History	Cronologia	
-ICYMI	In Case You Missed It	acronimo.  In caso non ti fosse giunta la voce, nel caso in cui il contesto consenta frasi lunghe a piacere. Per i tweet #sapevatelo.
+ICYMI	In Case You Missed It	acronimo. In caso non ti fosse giunta la voce, nel caso in cui il contesto consenta frasi lunghe a piacere. Per i tweet #sapevatelo.
 Identity system	sistema di identificazione	
 Implement	implementare	
 Inbox	 In arrivo	
@@ -147,6 +148,7 @@ advance	avanzamento
 advanced	avanzate	
 advertiser	inserzionista pubblicitario	
 advocacy	patrocinio legale	di solito nel caso di Mozilla si può rendere anche con difesa dei diritti online (vedere contesto) Per il sito Mozilla Advocacy lasciare in inglese.
+advocate	attivista	sostenitore, difensore (dei diritti) (dipende dal contesto)
 agitator	agitatorie	demagogo, sovversivo, sobillatore
 agreement	accordo	
 alert	avviso	
@@ -207,7 +209,7 @@ browse page	pagina di navigazione
 browser	browser	
 bug	bug	anche baco se si vuole mantenere l'analogia con l'insetto usata in alcuni contesti (vedi debug)
 bug tracking	bug tracking	sistema di gestione dei bug (dei problemi)
-build	creare	però se si riferisce al prodotto di una compilazione (da sorgente si ottiene qualcosa di eseguibile) si lascia in inglese. Nel caso si riferisca a al processo di pacchettizzazione di un'app pacchetto o se usato come verbo pacchettizzare o assemblare se con pacchettizzare si rischia una ripetizione
+build	creare	realizzare. Nel caso indichi la build di un software (esempio Firefox) usare versione. Se si riferisce al prodotto di una compilazione (da sorgente si ottiene qualcosa di eseguibile) si lascia in inglese. Nel caso si riferisca a al processo di pacchettizzazione di un'app pacchetto o se usato come verbo pacchettizzare o assemblare se con pacchettizzare si rischia una ripetizione
 building blocks	blocchi preconfezionati
 busy	impegnato, sovraccarico, complesso
 button	pulsante
@@ -414,12 +416,12 @@ grant	consenti
 granted	concesso	
 grants	sovvenzioni	sovvenzioni pubbliche o da fondazioni no profit
 graphics	elementi grafici	
-grassroots	movimento popolare	opinione pubblica, movimento di persone che nasce in modo spontaneo. Base, società civile. Gente comune. Lavorare  sul campo. (nel senso di operare con la base)
+grassroots	movimento popolare	opinione pubblica, movimento di persone che nasce in modo spontaneo. Base, società civile. Gente comune. Lavorare sul campo. (nel senso di operare con la base)
 great	grande	Anche perfettamente (works great offline, funziona perfettamente anche in modalità non in linea)
 grid	griglia	
 grid view	vista griglia	
 guidelines	linee guida	
-hack	hack	modificare (il codice), trovare una soluzione creativa, magari in modo non proprio consono. Quando è inteso in senso negativo anche violare. Comunque nelle traduzioni di Mozilla ha quasi sempre un significato positivo. Non esiste un verbo diretto, vedere il contesto per  Il verbo inglese hack può avere parecchie accezioni, ma quella primaria è fare a pezzi, da cui derivano vari significati figurati come ad es. mutilare, distruggere, manomettere, modificare rozzamente (senza riguardi e/o facendo danni o abusivamente) ecc. Vedi anche http://blog.terminologiaetc.it/2013/01/28/dante-database-lessicale-lingua-inglese/
+hack	hack	modificare (il codice), trovare una soluzione creativa, magari in modo non proprio consono. Quando è inteso in senso negativo anche violare. Comunque nelle traduzioni di Mozilla ha quasi sempre un significato positivo. Non esiste un verbo diretto, vedere il contesto per Il verbo inglese hack può avere parecchie accezioni, ma quella primaria è fare a pezzi, da cui derivano vari significati figurati come ad es. mutilare, distruggere, manomettere, modificare rozzamente (senza riguardi e/o facendo danni o abusivamente) ecc. Vedi anche http://blog.terminologiaetc.it/2013/01/28/dante-database-lessicale-lingua-inglese/
 ham	non è spam	
 hands-on	partecipativo	usato come aggettivo, significa partecipativo, effettivo.
 hard disk	disco fisso	anche harddrive disco locale
@@ -449,6 +451,7 @@ inline scripting	script inline	o anche incorporato
 inspector	strumento di analisi	(del codice)
 into the hand	distribuire	letteralmente mettere nelle mani, distribuire (cosa) a (chi)
 invalid	non valido	
+invent	inventare	ma se si tratta di un concetto immateriale (esempio un software) meglio ideare o concepire.
 invisible	non visibile	
 issue	problema, malfunzionamento	Known Issues, Problemi noti.
 item	elemento	oggetto
@@ -532,8 +535,9 @@ mozillian	mozilliano/a
 multi platform	multipiattaforma	in italiano i sostantivi con prefisso, come multi, vengono riportati in forma univerbata, multipiattaforma, multilingue, multicolore, ecc.(citato). Usato anche "più piattaforme"
 multi-line	multilinea	
 must be	deve, è necessario	ingenerale io preferisco usare una forma impersonale: “È necessario anche se ci sono vecchie stringhe in cui è usata una forma diretta come deve
+narrative	racconto	storia, narrazione (non narrativa che è un genere letterario). narrative nella sua accezione più recente indica una modalità di comunicazione con un’esposizione argomentata che riflette coerentemente una visione, dei valori e degli obiettivi. Maggiori info qui http://blog.terminologiaetc.it/2016/11/07/significato-differenza-narrazione-storytelling/
 new	nuovo	esordiente
-news	gruppi di discussione	talvolta ???
+newsgroup	newsgroup	o gruppi di discussione
 news	novità, notizie, news	
 next	successivo, accanto, di seguito, poi, ora	(in senso temporale) prossimo, anche prospettive (what's next). Se come pulsante di una procedura duidata Avanti.
 non-profit	non-profit	usato col trattino nelle pagine di mozilla.com. Anche senza fini di lucro in altre pagine.
@@ -595,7 +599,7 @@ popup list	menu a tendina
 popup menu	menu contestuale
 post	articolo	se riferito a una pubblicazione su un blog, se in un forum lasciarlo in inglese. Come verbo inviare
 pre-approved payment	pagamento preapprovato
-pre-release	versione preliminare	
+pre-release	versione preliminare (anche pre-release build)
 preapproval	preapprovazione	(dei pagamenti)
 preliminarily reviewed	sottoposto a revisione preliminare
 press center	sala stampa
