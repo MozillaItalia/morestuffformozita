@@ -1,22 +1,25 @@
 La legge europea sul diritto d’autore, o copyright, è da tempo nell’occhio del ciclone per i suoi numerosi controsensi e le sue mancanze.
 
-Prima di parlarne è bene ricordare la differenza tra la licenza copyright e copyleft, in modo da capire meglio il problema e le sue conseguenze nella vita di tutti i giorni.
+Prima di parlarne è bene ricordare la differenza tra la licenza "copyright" e "copyleft", in modo da capire meglio il problema e le sue conseguenze nella vita di tutti i giorni.
 
-Lo scopo della legge sul diritto d’autore in Italia è di tutelare la proprietà e i derivati dell’attività intellettuale tramite il riconoscimento di diversi diritti e garanzie, inclusa la remunerazione per un certo periodo di tempo.
+Lo scopo della legge sul diritto d’autore in Italia è di tutelare la proprietà dell’attività intellettuale e i suoi derivati, tramite il riconoscimento di diversi diritti e garanzie, inclusa la remunerazione per un certo periodo di tempo.
 
-La licenza copyleft comporta l’opposto. Nata nel mondo informatico con il movimento open source, permette la distribuzione e modifica sotto certe condizioni senza il riconoscimento di una remunerazione.
-La più semplice e diffusa delle condizioni è la menzione dell’autore dell’opera originale e la distribuzione della nuova opera sotto la licenza dell’opera originale in modo, che il progetto possa continuare a vivere secondo lo stesso spirito.
+La licenza copyleft ha tutt’altra impostazione: nata nel mondo informatico con il movimento open source, permette la distribuzione e la modifica di un’opera a certe condizioni (tra cui anche la rinuncia dell’autore a una remunerazione). Le più semplici e diffuse delle condizioni sono la menzione dell’autore dell’opera originale e, qualora l’opera originale venga modificata, la distribuzione della nuova opera sotto la stessa licenza dell’opera originale, in modo che possa continuare a vivere secondo lo spirito originario.
 
-Dopo questa premessa abbiamo un’idea chiara di che cosa significhi proteggere i diritti di un’opera, ma che cosa comporta nella vita di tutti i giorni dei cittadini europei?
+Ma che cosa comporta nella vita di tutti i giorni dei cittadini europei avere una legge che protegge tutti i diritti di un’opera?
 
 https://www.youtube.com/watch?v=Obv6M_c8XVs
 
-La legge attuale dell’Unione Europea in materia di copyright risale al 2001, e naturalmente non prevedeva l’Internet e i social network di oggi. Di conseguenza è molto facile infrangere questa legge senza rendersene conto.
+La attuale normativa dell’Unione Europea in materia di copyright risale al 2001. Ovviamente, allora non era nemmeno possibile prevedere lo sviluppo che avrebbero avuto Internet e, successivamente, i social network: di conseguenza è molto facile per chiunque infrangere la legge senza rendersene conto.
 
-Consideriamo per esempio la libertà di panorama: i palazzi, così come altri elementi architettonici, essendo opere dell’ingegno sono protette da copyright e ne è vietata la riproduzione, ad esempio attraverso fotografie. Non è uno scherzo: non è possibile fare una foto ai palazzi e condividerla sui social network perché rappresenta un illecito. Essendo la fotografia una copia, l’operazione è equivalente alla copia di un film e alla sua distribuzione attraverso la rete. 
+Consideriamo, per esempio i palazzi e gli elementi architettonici in generale: essendo opere dell’ingegno, sono protette da copyright. Questo significa che ne è vietata la riproduzione e la pubblicazione a fini di lucro – anche nel caso in cui non guadagniamo direttamente noi dalla pubblicazione, ma qualcun altro anche se in modo indiretto. In altre parole, se scattassimo un selfie davanti a un palazzo costruito dopo il 1946 (come il Grattacielo Pirelli a Milano) e lo pubblicassimo su un social network (ossia su una piattaforma privata), di fatto staremmo violando la legge perché non abbiamo chiesto il permesso a chi detiene i diritti.
+
+Non è uno scherzo purtroppo! Poiché la fotografia è una copia (ossia una “riproduzione”) dell’opera originaria (in questo caso, il Pirellone), scattare una foto del genere e pubblicarla in Rete è quasi come copiare un film e distribuirlo senza permesso su Internet.
 
 La [libertà di panorama](https://it.wikipedia.org/wiki/Libert%C3%A0_di_panorama) significa libertà nel fare foto, condividerle e rielaborarle senza gli oneri di riproduzione, solo perché abbiamo fatto un *selfie* davanti al Colosseo.
-Nel caso del Colosseo, non è protetto da copyright e quindi non ci sono rischi, ma non è lo stesso per l’impianto di illuminazione della Torre Effeil. L’autore della Torre Effeil è deceduto da oltre settant’anni e il copyright è scaduto, quindi possiamo scattare le foto e pubblicarle su Internet, ma non quando scende la notte ed è tutto più romantico. Perché le luci sono protette da copyright!
+Ci sono casi, poi, dove a essere sotto tutela del diritto d’autore non è il monumento in quanto tale (come la Torre Eiffel, il cui autore Gustave Eiffel è morto nel 1923, ossia da più di 70 anni), ma una particolare installazione artistica che si applica a quel monumento. Per fare lo stesso esempio di prima, scattarsi un selfie davanti alla Torre Eiffel di giorno è permesso, ma di sera no. Questo perché chi ha progettato le luminarie della torre è ancora vivo e vegeto... e bisogna chiedergli il permesso!
+
+In altri Paesi, invece, ci sono delle normative che tutelano lo sfruttamento commerciale dei monumenti anche se il loro autore è morto da più di 70 anni e l’opera è in pubblico dominio. In Italia, per esempio, c’è il cosiddetto “Codice Urbani”, che garantisce un canone di riproduzione all’ente che ha in custodia un particolare bene culturale. Solo da qualche anno, dopo la riforma fatta tramite il cosiddetto “decreto Art Bonus”, è possibile condividere il proprio selfie davanti al Colosseo su un social network... ma è ancora vietato pubblicare una foto del Colosseo sull’enciclopedia libera Wikipedia.
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/No-LdP.svg/500px-No-LdP.svg.png)
 
@@ -26,22 +29,24 @@ Anche un’opera d’arte come il classico dipinto del paesaggio, essendo un’o
 
 Definire questa legge limitante è riduttivo, ma questa è soltanto la punta dell’iceberg.
 
-Per questo motivo Wikimedia Italia [lo scorso anno](https://it.wikipedia.org/wiki/Aiuto:Copyright_immagini/Libert%C3%A0_di_panorama) ha avviato una campagna per la Libertá di Panorama dopo aver ricevuto una [diffida](https://it.wikipedia.org/wiki/Utente:Alcuni_Wikipediani/Lettera_aperta_sulle_leggi_sul_copyright) da parte degli Uffizi di Firenze per l’uso di fotografie delle opere ospitate presso il museo.
-Lo scorso anno quindi Wikipedia a [livello globale](https://meta.wikimedia.org/wiki/Libert%C3%A0_di_Panorama_in_Europa_nel_2015) ha realizzato una campagna per sensibilizzare riguardo i problemi di [copyright che l’Enciclopedia Libera](https://it.wikipedia.org/wiki/Wikipedia:Copyright_immagini) incontra ogni giorno nella sua opera di divulgazione.
-Non dimentichiamo la loro [interrogazione parlamentare del 2008](https://it.wikisource.org/wiki/Interrogazione_parlamentare_-_Diritto_al_panorama) ma nemmeno la campagna [Wiki Love Monuments](http://wikilovesmonuments.wikimedia.it/), un’operazione che serve a identificare elementi con problemi di copyright oltre che a raccogliere fantastiche fotografie.
+Anche per questo motivo, Wikimedia Italia da anni si batte per ottenere una legislazione più favorevole al riutilizzo senza limiti (e quindi anche a scopo commerciale) delle foto dei beni culturali in Italia. Un esempio del perché “riutilizzare senza limiti è bene” è dato dal concorso fotografico [Wiki Love Monuments](http://wikilovesmonuments.wikimedia.it/), il cui scopo è raccogliere immagini del patrimonio culturale mondiale affinché possano essere caricate su Wikipedia. Nato nel 2010 nei Paesi Bassi, è il concorso fotografico più grande del mondo con oltre 10.000 partecipanti da 43 Paesi nel mondo. Anche l’Italia vi partecipa dal 2012, ma a causa del Codice Urbani solo una ristretta lista di monumenti è fotografabile – e la lista cambia di anno in anno, a seconda delle autorizzazioni ricevute.
 
-Passando invece alla grafica, consideriamo ad esempio i meme. Queste immagini, oramai un tormentone di Internet, spesso contengono un fotogramma di un film o di una serie TV protetti da copyright. Modificarle aggiungendo un testo e condividerle in rete significa infrangere la legge.
+Wikipedia Italia [Lo scorso anno](https://it.wikipedia.org/wiki/Aiuto:Copyright_immagini/Libert%C3%A0_di_panorama) ha avviato una campagna per la Libertá di Panorama dopo aver ricevuto una [diffida](https://it.wikipedia.org/wiki/Utente:Alcuni_Wikipediani/Lettera_aperta_sulle_leggi_sul_copyright) da parte degli Uffizi di Firenze per l’uso di fotografie delle opere ospitate presso il museo.
+Aa [livello globale](https://meta.wikimedia.org/wiki/Libert%C3%A0_di_Panorama_in_Europa_nel_2015) ha realizzato una campagna per sensibilizzare riguardo i problemi di [copyright che l’Enciclopedia Libera](https://it.wikipedia.org/wiki/Wikipedia:Copyright_immagini) incontra ogni giorno nella sua opera di divulgazione.
+Non dimentichiamo la loro [interrogazione parlamentare del 2008](https://it.wikisource.org/wiki/Interrogazione_parlamentare_-_Diritto_al_panorama) sul tema.
+
+E questa è solo la punta dell’iceberg. Consideriamo ad esempio i meme: spesso queste immagini, oramai diventate un tormentone di Internet, contengono un fotogramma di un film o di una serie TV protetti da copyright. Quello che molti non sanno è che modificare questi fotogrammi, anche solo aggiungendo del testo, e poi condividerle in rete significa infrangere la legge.
 
 https://www.youtube.com/watch?v=OG10a1F9gU0
 
-Praticamente ciascuna delle persone che sta "twittando" in questo momento o condividendo una foto su Facebook rappresenta un criminale per la legge europea e italiana.
+Praticamente ciascuna delle persone che sta "twittando" in questo momento o condividendo una foto su Facebook é un potenziale criminale per la legge europea e italiana.
 
 È urgente avviare una riforma della legge sul copyright in modo da garantire la libertà degli utenti su Internet. Mozilla ha iniziato una campagna di sensibilizzazione per raccogliere le persone interessate a questo argomento; per partecipare è sufficiente compilare un modulo online su https://www.changecopyright.org/.
 
 Perché Mozilla ha realizzato questa campagna? Guarda il video per scoprirlo
 https://www.youtube.com/watch?v=QjICgr3sz4Y
 
-Per chi volesse approfondire l’argomento, la community Mozilla Italia sta organizzando diversi eventi di sensibilizzazione, anche all’interno dei Linux Day.
+Per chi volesse approfondire l’argomento, la community Mozilla Italia sta organizzando e ha organizzato diversi eventi di sensibilizzazione, anche all’interno dei Linux Day.
 
 È disponibile del materiale (in inglese) per approfondire:
 * http://copyrightexceptions.eu/#Art.%205.1 - Le eccezioni della legge sul copyright nei vari paesi europei.
