@@ -48,13 +48,14 @@ Firefox OS Simulator	Firefox OS Simulator
 Firefox healt report	valutazione integrità di Firefox
 For more information	Per ulteriori informazioni	
 General Counsel	rappresentante /consulente legale	
-get	ottenere	La traduzione di get dipende dal contesto, esempio: un software si scarica o si installa.
 Get Involved	collabora con (noi)	
 Guest browsing navigazione in modalità ospite	è una caratteristica di Firefox per Android che consente di condividere il browser con amici senza condividere i dati di navigazione.
 HTML	HTML	Acronimo di Hypertext Markup Language, anche nella versione HTML5
 Health	salute	ma anche benessere
 History	Cronologia	
 ICYMI	In Case You Missed It	acronimo. In caso non ti fosse giunta la voce, nel caso in cui il contesto consenta frasi lunghe a piacere. Per i tweet #sapevatelo.
+IRC	IRC	L' Internal Revenue Code (IRC) è il testo legislativo che dal 1954 raggruppa tutti i tax acts (le leggi fiscali) approvati dal Congresso dopo essere state esaminate prima dalla Camera dei Rappresentanti, ed eventualmente emendate dal Senato, e poi promulgate dal Presidente (l'ultima versione profonda dell' IRC risale al 27 settembre 1986 con il Tax Reform Act redatto sotto il governo dell'allora Presidente Ronald Reagan).
+IRS	Internal Revenue Service	l'Ufficio delle entrate degli Stati Uniti
 Identity system	sistema di identificazione	
 Implement	implementare	
 Inbox	 In arrivo	
@@ -190,7 +191,8 @@ behavioral advertising	annunci pubblicitari mirati	o avvisi
 believe	credere	anche pensare
 below	seguente	di seguito, qui sotto, sottostante
 billing	fatturazione	
-billion	miliardo	
+billing address	indirizzo per la fatturazione	
+billion	miliardo	Diversamente dall'italiano che usa la scala lunga, l'inglese utilizza la scala corta, questo significa che a partire dal miliardo le parole usate in inglese diventano dei falsi amici. (billion = miliardo, trillion = bilione = 10^12). https://it.wikipedia.org/wiki/Scala_lunga_e_scala_corta
 binary component	componente compilato	Binary, letteralmente binario, ma se riferito a un software è compilato.
 blank	vuoto	
 blocklisted	aggiunto alla lista di (cosa) bloccato, bloccato	aggiunta alla lista delle app/addon bloccati, meglio usare una forma diretta, app/addon bloccato.
@@ -235,7 +237,7 @@ character encoding	codifica caratteri
 character set	set di caratteri	
 chargeback	riaccredito
 charged	addebitato	forma intransitiva (you are been charged) ti è stato addebitato
-check	verifica	controllo. Se è chiaro dal contesto ci si può riferire anche a un assegno.
+check	verifica	controllo. Se è chiaro dal contesto ci si può riferire anche a un assegno (scritto anche cheque). Per l'operazione di riscossione di un assegno usare incassare.
 choose	scegliere	
 cipher	algoritmo crittografico	in un contesto analogico si può usare cifrario. encipher = cifrare, decipher = decifrare.
 clear	elimina	
@@ -402,6 +404,7 @@ gambling	Gioco d'azzardo
 game app	app gioco	
 generate	generare	
 geolocation	georilevazione	
+get	ottenere	La traduzione di get dipende dal contesto, esempio: un software si scarica o si installa.
 get foot	affermarsi	letteralmente trovare un appliglio. 
 get help	ottieni supporto	
 get involved	collabora, con qualcuno, di solito con noi	
@@ -473,6 +476,7 @@ leaderboard	classifica
 leak	perdita	
 learn more	ulteriori informazioni, maggiori informazioni, scopri	ulteriori informazioni come traducente principale, ma si può adeguare alla particolare stringa
 legacy	utilizza tecnologia obsoleta	la traduzione dipende dal contesto, con il termine legacy vengono indicate dei software/applicazioni che sfruttano una tecnologia non più supportata o deprecata (esempio con WebExtension le estensioni basate su XUL vengono deprecate).
+legal alien	immigrato regolare	
 less	meno	
 library	libreria	di solito riferito ai framework JS come jQuery e simili
 licensed under * license	concesso con licenza *	
@@ -537,8 +541,8 @@ multi-line	multilinea
 must be	deve, è necessario	ingenerale io preferisco usare una forma impersonale: “È necessario anche se ci sono vecchie stringhe in cui è usata una forma diretta come deve
 narrative	racconto	storia, narrazione (non narrativa che è un genere letterario). narrative nella sua accezione più recente indica una modalità di comunicazione con un’esposizione argomentata che riflette coerentemente una visione, dei valori e degli obiettivi. Maggiori info qui http://blog.terminologiaetc.it/2016/11/07/significato-differenza-narrazione-storytelling/
 new	nuovo	esordiente
-newsgroup	newsgroup	o gruppi di discussione
 news	novità, notizie, news	
+newsgroup	newsgroup	o gruppi di discussione
 next	successivo, accanto, di seguito, poi, ora	(in senso temporale) prossimo, anche prospettive (what's next). Se come pulsante di una procedura duidata Avanti.
 non-profit	non-profit	usato col trattino nelle pagine di mozilla.com. Anche senza fini di lucro in altre pagine.
 nonce	nonce	è la contrazione di number used once, un numero casuale utilizzato per l'autenticazione di richieste client-server.
@@ -623,6 +627,7 @@ provider	fornitore, provider	ad esempio di connessione Internet, di un servizio,
 pseudo selector	pseudoselettore	
 public key pinning	pinning delle chiavi pubbliche	viene indicato anche dall'acronimo HPKP (HTTP Public Key Pinning). È un meccanismo di controllo (recente) mediante cui è possibile, da parte di un sito all'atto del first connect, indicare un insieme di hash delle autorità che hanno rilasciato il certificato pubblico. È così possibile evitare che una CA supportata dal browser ma non dal sito rilasci un certificato valido per il sito (il caso classico è una CA poco sicura o affiliata a stati canaglia che rilasciano un certificato fasulo, vedi DigiNotar o CA tunisina).
 public page	pagina pubblica	
+publicly traded stock	azioni quotate in borsa	
 published	pubblica. Stato di visibilità dell'app. Tutti possono visualizzarla e appare nelle ricerche e nelle pagine di presentazione (categorie, consigliate, ecc.)
 pull out all the stops	concentrare tutti gli sforzi	lavorare duramente a qualcosa
 purchase receipt	ricevuta di pagamento	
@@ -641,6 +646,7 @@ reason	motivo, ragione, motivazione
 receipt verification	controllo ricevute	
 recently	di recente, recentemente	di solito viene più usato di recente
 recipient	destinatario	
+recurring	periodico	azione continuata nel tempo, ad esempio recurring donation = donazione periodica. Anche ricorrente.
 redirect	reindirizzamento	
 reference	riferimento	informazioni di riferimento su (cosa)
 refine	restringere	rifinire
@@ -866,6 +872,7 @@ what	che cosa, qual è	usando che cosa ricordarsi del che, se reso come qual è 
 white paper	libro bianco	Con il termine libro bianco (dall'inglese "White Paper") si indica generalmente un documento ufficiale pubblicato da un governo o da un'organizzazione internazionale al fine di rendere ufficiale un rapporto Nel marketing la parola può indicare anche una pubblicazione scritta da un professionista esperto di una materia che offre informazioni di qualità e di interesse ad un pubblico selezionato di utenti.
 whiteboard	bacheca	su AMO è il pannello dove vengono visualizzate informazioni rilevanti per gli editor del Marketplace
 widget	widget	
+wire transfer	bonifico bancario	
 with	con	ma anche grazie a (cosa), assieme
 without	senza	senza bisogno
 wizard	procedura guidata di […]	
