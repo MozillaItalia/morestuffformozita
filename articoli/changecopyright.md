@@ -1,16 +1,17 @@
 La legge europea sul diritto d’autore, o copyright, è da tempo nell’occhio del ciclone per i suoi numerosi controsensi e le sue mancanze.
 
-Prima di parlarne è bene ricordare la differenza tra la licenza "copyright" e "copyleft", in modo da capire meglio il problema e le sue conseguenze nella vita di tutti i giorni.
+Prima di parlarne è bene ricordare la differenza tra due filosofie in materia di diritto d’autore, la filosofia "copyright" e la filosofia "copyleft", in modo da capire meglio il problema e le sue conseguenze nella vita di tutti i giorni.
 
-Lo scopo della legge sul diritto d’autore in Italia è di tutelare la proprietà dell’attività intellettuale e i suoi derivati, tramite il riconoscimento di diversi diritti e garanzie, inclusa la remunerazione per un certo periodo di tempo.
+La legge sul diritto d’autore in Italia è ispirata alla filosofia “copyright”, mette cioè al primo posto la tutela della proprietà dell’attività intellettuale e dei suoi derivati, tramite il riconoscimento di diversi diritti e garanzie, inclusa la remunerazione per un certo periodo di tempo.
 
-La licenza copyleft ha tutt’altra impostazione: nata nel mondo informatico con il movimento open source, permette la distribuzione e la modifica di un’opera a certe condizioni (tra cui anche la rinuncia dell’autore a una remunerazione). Le più semplici e diffuse delle condizioni sono la menzione dell’autore dell’opera originale e, qualora l’opera originale venga modificata, la distribuzione della nuova opera sotto la stessa licenza dell’opera originale, in modo che possa continuare a vivere secondo lo spirito originario.
+Le licenze basate su una filosofia di tipo copyleft hanno tutt’altra impostazione e mettono al primo posto l’opera e la sua diffusione anziché l’autore
+Le prime licenze di tipo copyleft si sono diffuse nel mondo informatico con il movimento open source, consentono la distribuzione e la modifica di un’opera a certe condizioni (tra cui anche la rinuncia dell’autore a una remunerazione). Le più semplici e diffuse delle condizioni sono la menzione dell’autore dell’opera originale e, qualora l’opera originale venga modificata, la distribuzione della nuova opera sotto la stessa licenza dell’opera originale, in modo che possa continuare a vivere secondo lo spirito originario.
 
 Ma che cosa comporta nella vita di tutti i giorni dei cittadini europei avere una legge che protegge tutti i diritti di un’opera?
 
-https://www.youtube.com/watch?v=Obv6M_c8XVs
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Obv6M_c8XVs" frameborder="0" allowfullscreen></iframe>
 
-La attuale normativa dell’Unione Europea in materia di copyright risale al 2001. Ovviamente, allora non era nemmeno possibile prevedere lo sviluppo che avrebbero avuto Internet e, successivamente, i social network: di conseguenza è molto facile per chiunque infrangere la legge senza rendersene conto.
+L’attuale normativa dell’Unione Europea in materia di copyright risale al 2001. Ovviamente, allora non era nemmeno possibile prevedere lo sviluppo che avrebbero avuto Internet e, successivamente, i social network: di conseguenza è molto facile per chiunque infrangere la legge senza rendersene conto.
 
 Consideriamo, per esempio i palazzi e gli elementi architettonici in generale: essendo opere dell’ingegno, sono protette da copyright. Questo significa che ne è vietata la riproduzione e la pubblicazione a fini di lucro – anche nel caso in cui non guadagniamo direttamente noi dalla pubblicazione, ma qualcun altro anche se in modo indiretto. In altre parole, se scattassimo un selfie davanti a un palazzo costruito dopo il 1946 (come il Grattacielo Pirelli a Milano) e lo pubblicassimo su un social network (ossia su una piattaforma privata), di fatto staremmo violando la legge perché non abbiamo chiesto il permesso a chi detiene i diritti.
 
@@ -37,41 +38,43 @@ Non dimentichiamo la loro [interrogazione parlamentare del 2008](https://it.wiki
 
 E questa è solo la punta dell’iceberg. Consideriamo ad esempio i meme: spesso queste immagini, oramai diventate un tormentone di Internet, contengono un fotogramma di un film o di una serie TV protetti da copyright. Quello che molti non sanno è che modificare questi fotogrammi, anche solo aggiungendo del testo, e poi condividerle in rete significa infrangere la legge.
 
-https://www.youtube.com/watch?v=OG10a1F9gU0
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OG10a1F9gU0" frameborder="0" allowfullscreen></iframe>
 
-Praticamente ciascuna delle persone che sta "twittando" in questo momento o condividendo una foto su Facebook é un potenziale criminale per la legge europea e italiana.
+Praticamente ciascuna delle persone che sta "twittando" in questo momento o condividendo una foto su Facebook è un potenziale criminale per la legge europea e italiana.
 
 È urgente avviare una riforma della legge sul copyright in modo da garantire la libertà degli utenti su Internet. Mozilla ha iniziato una campagna di sensibilizzazione per raccogliere le persone interessate a questo argomento; per partecipare è sufficiente compilare un modulo online su https://www.changecopyright.org/.
 
 Perché Mozilla ha realizzato questa campagna? Guarda il video per scoprirlo
-https://www.youtube.com/watch?v=QjICgr3sz4Y
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QjICgr3sz4Y" frameborder="0" allowfullscreen></iframe>
 
 Per chi volesse approfondire l’argomento, la community Mozilla Italia sta organizzando e ha organizzato diversi eventi di sensibilizzazione, anche all’interno dei Linux Day.
 
 È disponibile del materiale (in inglese) per approfondire:
-* http://copyrightexceptions.eu/#Art.%205.1 - Le eccezioni della legge sul copyright nei vari paesi europei.
-* http://copy-me.org/ - Sito di informazioni
-* https://www.youtube.com/watch?v=NGLcGVMAPxc - Un’ulteriore analisi sulla legge europea
-* http://copywrongs.eu/it/ 
-* http://www.fixcopyright.eu/ 
+
+* [Sito](http://copyrightexceptions.eu/#Art.%205.1) in cui approfondire le differenze legislative in materia di copyright nei paesi della Comunità europea
+* [Sito](http://copy-me.org/) in cui approfondire l'argomento
+* [How copyright affects our future](https://www.youtube.com/watch?v=NGLcGVMAPxc), un video in cui Ioana Pelehatai e Alex Lungu spiegano gli effetti della legge sul copyright nella vita di tutti i giorni
+* [Sito](http://copywrongs.eu/it/) che analizza gli aspetti negativi dell’attuale legge sul copyright
+* [Sito](http://www.fixcopyright.eu/) di riferimento per riformare la legge europea sul copyright
 
 Materiale realizzato da Mozilla:
-* http://changecopyright.org/ La campagna
 
-Video promozionali di Mozilla:
-* https://www.youtube.com/watch?v=QjICgr3sz4Y 
-* https://www.youtube.com/watch?v=OG10a1F9gU0 
-* https://www.youtube.com/watch?v=Obv6M_c8XVs 
-* https://postcrimes.org/#!/ Campagna interattiva di Mozilla
+* [Campagna](http://changecopyright.org/) per informare e spingere a una riforma della legge europea sul copyright
+* Video [We heart the Internet](https://www.youtube.com/watch?v=QjICgr3sz4Y)
+* [Video CSI GIF](https://www.youtube.com/watch?v=OG10a1F9gU0)
+* [Video Meme Jail](https://www.youtube.com/watch?v=Obv6M_c8XVs)
+* [postcrimes.org](https://postcrimes.org/#!/), sito interattivo per far conoscere gli aspetti negativi dell’attuale legge sul copyright
 
 La situazione di Wikipedia Italia:
-* https://it.wikipedia.org/wiki/Utente:Alcuni_Wikipediani/Lettera_aperta_sulle_leggi_sul_copyright 
-* https://it.wikipedia.org/wiki/Aiuto:Copyright_immagini/Libert%C3%A0_di_panorama 
-* https://meta.wikimedia.org/wiki/Libert%C3%A0_di_Panorama_in_Europa_nel_2015 
-* http://wikilovesmonuments.wikimedia.it/ 
-* https://it.wikipedia.org/wiki/Wikipedia:Copyright_immagini 
-* https://it.wikisource.org/wiki/Interrogazione_parlamentare_-_Diritto_al_panorama 
 
-Situazione europea:
-* http://www.techeconomy.it/2016/09/14/google-tax-sul-diritto-dautore-giusto-approccio - News Snippet l’eccezione tedesca e spagnola
-* http://www.apogeonline.com/webzine/2016/09/23/il-copyright-europeo-1-1 
+* [Lettera aperta degli wikipediani riguardo la legge sul copyright](https://it.wikipedia.org/wiki/Utente:Alcuni_Wikipediani/Lettera_aperta_sulle_leggi_sul_copyright)
+* [Pagina di Wikipedia sulla libertà di panorama](https://it.wikipedia.org/wiki/Aiuto:Copyright_immagini/Libert%C3%A0_di_panorama)
+* [La libertà di panorma in Europa nel 2015](https://meta.wikimedia.org/wiki/Libert%C3%A0_di_Panorama_in_Europa_nel_2015)
+* [Progetto Wikipedia loves monuments](http://wikilovesmonuments.wikimedia.it/)
+* [Pagina sul copyright delle immagini](https://it.wikipedia.org/wiki/Wikipedia:Copyright_immagini)
+* [Interrogazione parlamentare sul diritto di panorama](https://it.wikisource.org/wiki/Interrogazione_parlamentare_-_Diritto_al_panorama)
+
+Altri articoli dai magazine online italiani:
+
+* [Articolo sulla tassa per pubblicare gli stralci delle notizie nei risultati di ricerca](http://www.techeconomy.it/2016/09/14/google-tax-sul-diritto-dautore-giusto-approccio), con approfondimento sulle eccezioni tedesca e spagnola
+* [La legge 1.1 sul copyright europeo](http://www.apogeonline.com/webzine/2016/09/23/il-copyright-europeo-1-1)
